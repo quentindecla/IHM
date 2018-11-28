@@ -9,27 +9,35 @@
 <AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
   <!-- TODO Add Nodes -->
   <children>
-    <Label alignment="CENTER" layoutX="200.0" layoutY="285.0" prefHeight="50.0" prefWidth="200.0" text="hello i'm Quentin" textAlignment="LEFT" textOverrun="ELLIPSIS" />
-    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView fitHeight="54.99998474121094" fitWidth="77.69838957998704" layoutX="72.0" layoutY="522.0" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../../../../../../../../home/45/qdecla/Bureau/M1/IHM/drapeau_français.jpeg" />
       </image>
     </ImageView>
-    <MenuBar layoutX="54.0" layoutY="14.0" prefWidth="502.0">
+    <TextArea layoutX="150.0" layoutY="138.0" prefWidth="301.0" promptText="" text="Bienvenue, ici apprendre français blablabla&#10;découvrir mon pays ? L'onglet magazine blabla&#10;Vous souhaitez évaluer botre lvl, go exercice dans atelier&#10;si vous avez des doutes ou questions en avant pour Outil aidera vous&#10;" wrapText="true" />
+    <Button layoutX="80.0" layoutY="337.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="111.0" text="Magazine" />
+    <Button layoutX="244.0" layoutY="337.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="111.0" text="Atelier" />
+    <Button layoutX="400.0" layoutY="337.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="111.0" text="Outil" />
+    <ImageView fitHeight="54.99998474121094" fitWidth="77.69838957998704" layoutX="244.0" layoutY="522.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../../../../../../../../../home/45/qdecla/Bureau/M1/IHM/drapeau_anglais.png" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="54.99998474121094" fitWidth="77.69838957998704" layoutX="451.0" layoutY="522.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../../../../../../../../../home/45/qdecla/Bureau/M1/IHM/drapeau_espagnol.png" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="54.99998474121094" fitWidth="77.69838957998704" layoutX="261.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../../../../../../../../../home/45/qdecla/Bureau/M1/IHM/drapeau_français.jpeg" />
+      </image>
+    </ImageView>
+    <MenuBar layoutX="0.0" layoutY="0.0" prefWidth="600.0">
       <menus>
         <Menu mnemonicParsing="false" text="File">
           <items>
             <MenuItem mnemonicParsing="false" text="Close" />
-          </items>
-        </Menu>
-        <Menu mnemonicParsing="false" text="Edit">
-          <items>
-            <MenuItem mnemonicParsing="false" text="Delete" />
-          </items>
-        </Menu>
-        <Menu mnemonicParsing="false" text="Help">
-          <items>
-            <MenuItem mnemonicParsing="false" text="About" />
           </items>
         </Menu>
       </menus>
