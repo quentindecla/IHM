@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label alignment="CENTER" layoutX="200.0" layoutY="285.0" prefHeight="50.0" prefWidth="200.0" text="hello i'm Quentin" textAlignment="LEFT" textOverrun="ELLIPSIS" />
+    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../../../../../../../../../home/45/qdecla/Bureau/M1/IHM/drapeau_français.jpeg" />
+      </image>
+    </ImageView>
+    <MenuBar layoutX="54.0" layoutY="14.0" prefWidth="502.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Close" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Delete" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+  </children>
+</AnchorPane>
