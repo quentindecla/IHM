@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+<AnchorPane prefHeight="600.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
   <!-- TODO Add Nodes -->
   <children>
     <TextArea layoutX="150.0" layoutY="138.0" prefWidth="301.0" promptText="" text="Bienvenue, ici apprendre français blablabla&#10;découvrir mon pays ? L'onglet magazine blabla&#10;Vous souhaitez évaluer botre lvl, go exercice dans atelier&#10;si vous avez des doutes ou questions en avant pour Outil aidera vous&#10;" wrapText="true" />
