@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="screen_atelier" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AtelierController">
+   <children>
+      <ImageView fx:id="fr_flag" fitHeight="71.0" fitWidth="96.0" layoutX="552.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/drapeau_français.jpeg" />
+         </image>
+      </ImageView>
+      <ChoiceBox fx:id="difficulty_cb" layoutX="600.0" layoutY="127.0" prefWidth="150.0" />
+      <Label layoutX="485.0" layoutY="131.0" prefHeight="17.0" prefWidth="115.0" text="Niveau de difficulté :" />
+      <Pane layoutX="50.0" layoutY="222.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="18.0" layoutY="145.0" prefHeight="25.0" prefWidth="164.0" ripplerFill="BLACK" style="-fx-background-color: #4444fe;" text="Commencer" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Pane layoutX="350.0" layoutY="222.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="18.0" layoutY="145.0" prefHeight="25.0" prefWidth="164.0" ripplerFill="BLACK" style="-fx-background-color: #4444fe;" text="Commencer" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Pane layoutX="650.0" layoutY="222.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="18.0" layoutY="145.0" prefHeight="25.0" prefWidth="164.0" ripplerFill="BLACK" style="-fx-background-color: #4444fe;" text="Commencer" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Pane layoutX="950.0" layoutY="222.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="18.0" layoutY="145.0" prefHeight="25.0" prefWidth="164.0" ripplerFill="BLACK" style="-fx-background-color: #4444fe;" text="Commencer" textFill="WHITE" />
+         </children>
+      </Pane>
+      <JFXButton fx:id="return_to_menu" alignment="CENTER" buttonType="RAISED" layoutX="525.0" layoutY="546.0" onAction="#return_to_menu" prefHeight="40.0" prefWidth="150.0" ripplerFill="BLACK" style="-fx-background-color: #4444fe;" text="Retour" textFill="WHITE" />
+   </children>
+</AnchorPane>

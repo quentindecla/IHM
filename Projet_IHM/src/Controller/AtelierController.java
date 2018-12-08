@@ -1,4 +1,4 @@
-package application;
+package Controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -33,7 +33,7 @@ public class AtelierController implements Initializable{
 	public void return_to_menu() throws Exception{
 		//Ouverture Ecran Atelier au clic bouton
 		Stage mp_stage = new Stage();
-		Parent root = FXMLLoader.load(getClass().getResource("Menu_Principal.fxml")); 	
+		Parent root = FXMLLoader.load(getClass().getResource("../FXML/Menu_Principal.fxml")); 	
 		Scene mp_scene = new Scene(root);
 		mp_stage.setTitle("Menu Principal");
 		mp_stage.setScene(mp_scene);
