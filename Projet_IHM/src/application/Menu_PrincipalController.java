@@ -9,7 +9,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class Menu_PrincipalController implements Initializable{
@@ -19,6 +21,8 @@ public class Menu_PrincipalController implements Initializable{
 	private AnchorPane screen_container;
 	@FXML
 	private Button leave_btn;
+	@FXML
+	private Label intro_label;
 
 	public void Open_Atelier() throws Exception{
 		//Ouverture Ecran Atelier au clic bouton
@@ -34,6 +38,13 @@ public class Menu_PrincipalController implements Initializable{
 		screen.close();
 		System.out.println("Fermeture du menu principal");
 	}
+	
+	private void initialize_label() {
+		intro_label.setText("Bienvenue, ici apprendre français blablabla\r\n" + 
+				"découvrir mon pays ? L'onglet magazine blabla\r\n" + 
+				"Vous souhaitez évaluer botre lvl, go exercice dans atelier\r\n" + 
+				"si vous avez des doutes ou questions en avant pour Outil aidera vous\r\n");
+	}
 
 	public void Leave() {
 		//Fermeture de l'ecran actuel
@@ -45,6 +56,6 @@ public class Menu_PrincipalController implements Initializable{
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		// TODO Auto-generated method stub
-		System.out.println("Coucou");
+		initialize_label();
 	}
 }
