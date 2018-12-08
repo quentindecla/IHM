@@ -14,11 +14,11 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-public class Main_MenuController implements Initializable{
+public class Menu_Principal_EspController implements Initializable{
 	@FXML
-	private AnchorPane mm_eng;
+	private AnchorPane Mp_Esp;
 	@FXML
-	private JFXButton back_btn;
+	private JFXButton Volver_MP_Fr;
 	
 	public void Back_To_French_Menu() throws Exception{
 		Stage mp_fr_stage = new Stage();
@@ -28,16 +28,18 @@ public class Main_MenuController implements Initializable{
 		mp_fr_stage.setScene(mp_fr_scene);
 		mp_fr_stage.show();
 		System.out.println("Back To French Menu");
-				
+						
 		//Fermeture de l'ecran actuel
-		Stage screen = (Stage)mm_eng.getScene().getWindow();
+		Stage screen = (Stage)Mp_Esp.getScene().getWindow();
 		screen.close();
 	}
 	
-	@Override	
-	public void initialize(URL arg0, ResourceBundle arg1) {
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
 		
 	}
 
+	
+	
 }

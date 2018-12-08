@@ -23,8 +23,6 @@ public class Menu_PrincipalController implements Initializable{
 	@FXML
 	private Button leave_btn;
 	@FXML
-	private Label intro_label;
-	@FXML
 	private Button eng_btn;
 
 	public void Open_Atelier() throws Exception{
@@ -59,24 +57,16 @@ public class Menu_PrincipalController implements Initializable{
 	
 	public void Open_Mp_Espagnol() throws Exception{
 		Stage mp_esp = new Stage();
-		Parent root = FXMLLoader.load(getClass().getResource("../FXML/Main_Menu.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("../FXML/Menu_Principal_Esp.fxml"));
 		Scene mp_esp_scene = new Scene(root);
 		mp_esp.setTitle("Main Menu");
 		mp_esp.setScene(mp_esp_scene);
 		mp_esp.show();
-		System.out.println("Open english main menu");
 		
 		//Fermeture de l'ecran actuel
 		Stage screen = (Stage)screen_container.getScene().getWindow();
 		screen.close();
 		System.out.println("Fermeture du menu principal");
-	}
-	
-	private void initialize_interface() {
-		intro_label.setText("Bienvenue, ici apprendre français blablabla\r\n" + 
-				"découvrir mon pays ? L'onglet magazine blabla\r\n" + 
-				"Vous souhaitez évaluer botre lvl, go exercice dans atelier\r\n" + 
-				"si vous avez des doutes ou questions en avant pour Outil aidera vous\r\n");
 	}
 
 	public void Leave() {
@@ -89,6 +79,5 @@ public class Menu_PrincipalController implements Initializable{
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		// TODO Auto-generated method stub
-		initialize_interface();
 	}
 }

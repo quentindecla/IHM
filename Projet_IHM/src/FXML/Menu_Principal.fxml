@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
 <?import com.jfoenix.controls.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
@@ -10,7 +11,7 @@
 <AnchorPane fx:id="screen_container" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Menu_PrincipalController">
   <!-- TODO Add Nodes -->
   <children>
-      <Label fx:id="intro_label" alignment="CENTER" layoutX="377.0" layoutY="155.0" prefHeight="99.0" prefWidth="449.0" />
+      <Label fx:id="intro_label" alignment="CENTER" layoutX="377.0" layoutY="102.0" prefHeight="99.0" prefWidth="449.0" text="Bienvenue sur /*Nom de l'app*/ pour apprendre plusieurs langues !" />
     <ImageView fitHeight="54.99998474121094" fitWidth="77.69838957998704" layoutX="561.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../img/drapeau_français.jpeg" />
@@ -26,9 +27,33 @@
         <Image url="@../../img/drapeau_espagnol.png" />
       </image>
     </ImageView>
-      <JFXButton fx:id="atelier_btn" buttonType="RAISED" layoutX="546.0" layoutY="365.0" onAction="#Open_Atelier" prefHeight="40.0" prefWidth="111.0" ripplerFill="BLACK" style="-fx-background-color: #4444fe;" text="Atelier" textFill="WHITE" />
       <JFXButton fx:id="leave_btn" layoutX="546.0" layoutY="547.0" onAction="#Leave" prefHeight="40.0" prefWidth="111.0" ripplerFill="BLACK" style="-fx-background-color: #4444fe;" text="Quitter" textFill="WHITE" />
-      <JFXButton fx:id="outil_btn" buttonType="RAISED" layoutX="746.0" layoutY="365.0" prefHeight="40.0" prefWidth="111.0" ripplerFill="BLACK" style="-fx-background-color: #4444fe;" text="Outil" textFill="WHITE" />
-      <JFXButton fx:id="magazine_btn" buttonType="RAISED" layoutX="346.0" layoutY="365.0" prefHeight="40.0" prefWidth="111.0" ripplerFill="BLACK" style="-fx-background-color: #4444fe;" text="Magazine" textFill="WHITE" />
+      <Pane layoutX="252.0" layoutY="224.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #4444fe;">
+         <children>
+            <JFXButton fx:id="magazine_btn" buttonType="RAISED" layoutX="45.0" layoutY="140.0" prefHeight="40.0" prefWidth="111.0" ripplerFill="BLACK" style="-fx-background-color: #4444fe;" text="Magazine" textFill="WHITE" />
+            <Label fx:id="label_magazine" alignment="CENTER" layoutX="5.0" layoutY="10.0" prefHeight="119.0" prefWidth="190.0" text="Découvrez la France" />
+         </children>
+         <effect>
+            <Blend />
+         </effect>
+      </Pane>
+      <Pane fx:id="label_atelier" layoutX="502.0" layoutY="224.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #4444fe;">
+         <children>
+            <JFXButton fx:id="atelier_btn" buttonType="RAISED" layoutX="45.0" layoutY="140.0" onAction="#Open_Atelier" prefHeight="40.0" prefWidth="111.0" ripplerFill="BLACK" style="-fx-background-color: #4444fe;" text="Atelier" textFill="WHITE" />
+            <Label fx:id="label_magazine1" alignment="CENTER" layoutX="5.0" layoutY="10.0" prefHeight="119.0" prefWidth="190.0" text="Exercez &amp; Améliorez vous" />
+         </children>
+         <effect>
+            <Blend />
+         </effect>
+      </Pane>
+      <Pane fx:id="label_outil" layoutX="752.0" layoutY="224.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #4444fe;">
+         <children>
+            <JFXButton fx:id="outil_btn" buttonType="RAISED" layoutX="45.0" layoutY="140.0" prefHeight="40.0" prefWidth="111.0" ripplerFill="BLACK" style="-fx-background-color: #4444fe;" text="Outil" textFill="WHITE" />
+            <Label fx:id="label_magazine2" alignment="CENTER" layoutX="5.0" layoutY="10.0" prefHeight="119.0" prefWidth="190.0" text="Besoin d'aide ?" />
+         </children>
+         <effect>
+            <Blend />
+         </effect>
+      </Pane>
   </children>
 </AnchorPane>
