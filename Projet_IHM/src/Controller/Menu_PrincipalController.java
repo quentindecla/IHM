@@ -32,6 +32,7 @@ public class Menu_PrincipalController implements Initializable{
 		Scene atelier_scene = new Scene(root);
 		atelier_stage.setTitle("Atelier");
 		atelier_stage.setScene(atelier_scene);
+		atelier_stage.setResizable(false);
 		atelier_stage.show();
 		
 		//Fermeture de l'ecran actuel
@@ -46,6 +47,7 @@ public class Menu_PrincipalController implements Initializable{
 		Scene mp_eng_scene = new Scene(root);
 		mp_eng.setTitle("Main Menu");
 		mp_eng.setScene(mp_eng_scene);
+		mp_eng.setResizable(false);
 		mp_eng.show();
 		System.out.println("Open english main menu");
 		
@@ -61,6 +63,7 @@ public class Menu_PrincipalController implements Initializable{
 		Scene mp_esp_scene = new Scene(root);
 		mp_esp.setTitle("Main Menu");
 		mp_esp.setScene(mp_esp_scene);
+		mp_esp.setResizable(false);
 		mp_esp.show();
 		
 		//Fermeture de l'ecran actuel

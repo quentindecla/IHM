@@ -26,6 +26,7 @@ public class Main_MenuController implements Initializable{
 		Scene mp_fr_scene = new Scene(root);
 		mp_fr_stage.setTitle("Atelier");
 		mp_fr_stage.setScene(mp_fr_scene);
+		mp_fr_stage.setResizable(false);
 		mp_fr_stage.show();
 		System.out.println("Back To French Menu");
 				

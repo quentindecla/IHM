@@ -1,6 +1,7 @@
 package Controller;
 
 import java.net.URL;
+import java.nio.charset.Charset;
 import java.util.ResourceBundle;
 
 import javafx.collections.FXCollections;
@@ -27,7 +28,10 @@ public class AtelierController implements Initializable{
 	private AnchorPane screen_atelier;
 	
 	public void initialize_cb() {
-		difficulty_cb.setItems(FXCollections.observableArrayList("Débutant", "Intermédiaire", "Expert"));
+		String deb = "Debutant";
+		String inter = "Intermediaire";
+		String exp = "Expert";
+		difficulty_cb.setItems(FXCollections.observableArrayList(deb, inter, exp));
 	}
 	
 	public void return_to_menu() throws Exception{
@@ -37,6 +41,7 @@ public class AtelierController implements Initializable{
 		Scene mp_scene = new Scene(root);
 		mp_stage.setTitle("Menu Principal");
 		mp_stage.setScene(mp_scene);
+		mp_stage.setResizable(false);
 		mp_stage.show();
 				
 		//Fermeture de l'ecran actuel
@@ -49,7 +54,7 @@ public class AtelierController implements Initializable{
 		if(difficulty_cb.getValue() == null) {
 			System.out.println("Erreur, vous n'avez pas choisi de difficulté !");
 		}
-		else if(difficulty_cb.getValue() == "Débutant"){
+		else if(difficulty_cb.getValue() == "Debutant"){
 			System.out.println("Difficulté : " + difficulty_cb.getValue());
 			
 			Stage ex1_stage = new Stage();
@@ -57,6 +62,7 @@ public class AtelierController implements Initializable{
 			Scene ex1_scene = new Scene(root);
 			ex1_stage.setTitle("Exercice - Temps & Conjugaison");
 			ex1_stage.setScene(ex1_scene);
+			ex1_stage.setResizable(false);
 			ex1_stage.show();
 					
 			//Fermeture de l'ecran actuel
@@ -69,7 +75,7 @@ public class AtelierController implements Initializable{
 		if(difficulty_cb.getValue() == null) {
 			System.out.println("Erreur, vous n'avez pas choisi de difficulté !");
 		}
-		else if(difficulty_cb.getValue() == "Débutant"){
+		else if(difficulty_cb.getValue() == "Debutant"){
 			System.out.println("Difficulté : " + difficulty_cb.getValue());
 			
 			Stage ex2_stage = new Stage();
@@ -77,6 +83,7 @@ public class AtelierController implements Initializable{
 			Scene ex2_scene = new Scene(root);
 			ex2_stage.setTitle("Exercice - Grammaire");
 			ex2_stage.setScene(ex2_scene);
+			ex2_stage.setResizable(false);
 			ex2_stage.show();
 					
 			//Fermeture de l'ecran actuel
@@ -89,7 +96,7 @@ public class AtelierController implements Initializable{
 		if(difficulty_cb.getValue() == null) {
 			System.out.println("Erreur, vous n'avez pas choisi de difficulté !");
 		}
-		else if(difficulty_cb.getValue() == "Débutant"){
+		else if(difficulty_cb.getValue() == "Debutant"){
 			System.out.println("Difficulté : " + difficulty_cb.getValue());
 			
 			Stage ex3_stage = new Stage();
@@ -97,6 +104,7 @@ public class AtelierController implements Initializable{
 			Scene ex3_scene = new Scene(root);
 			ex3_stage.setTitle("Exercice - Verbes Irréguliers");
 			ex3_stage.setScene(ex3_scene);
+			ex3_stage.setResizable(false);
 			ex3_stage.show();
 					
 			//Fermeture de l'ecran actuel
@@ -109,7 +117,7 @@ public class AtelierController implements Initializable{
 		if(difficulty_cb.getValue() == null) {
 			System.out.println("Erreur, vous n'avez pas choisi de difficulté !");
 		}
-		else if(difficulty_cb.getValue() == "Débutant"){
+		else if(difficulty_cb.getValue() == "Debutant"){
 			System.out.println("Difficulté : " + difficulty_cb.getValue());
 			
 			Stage ex4_stage = new Stage();
@@ -117,6 +125,7 @@ public class AtelierController implements Initializable{
 			Scene ex4_scene = new Scene(root);
 			ex4_stage.setTitle("Exercice - Prononciation_D");
 			ex4_stage.setScene(ex4_scene);
+			ex4_stage.setResizable(false);
 			ex4_stage.show();
 					
 			//Fermeture de l'ecran actuel

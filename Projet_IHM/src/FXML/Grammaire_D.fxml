@@ -1,10 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="600.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
-	<!-- TODO Add Nodes -->
+<AnchorPane prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane layoutY="-1.0" prefHeight="600.0" prefWidth="1200.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Nombres Cardinaux">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="401.0" layoutY="14.0" prefHeight="38.0" prefWidth="399.0" text="Les phrases suivantes sont-elles grammaticalement correctes ?">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="26.0" layoutY="86.0" prefHeight="98.0" prefWidth="530.0" style="-fx-border-color: #4444fe;">
+                           <children>
+                              <Label layoutX="22.0" layoutY="39.0" prefHeight="17.0" prefWidth="116.0" text="Vingts euros">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="8.0" layoutY="6.0" text="Proposition 1 :">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <JFXRadioButton layoutX="217.0" layoutY="41.0" text="Vrai" />
+                              <JFXRadioButton layoutX="329.0" layoutY="41.0" text="Faux" />
+                              <Pane fx:id="correc_q1" layoutX="5.0" layoutY="67.0" prefHeight="25.0" prefWidth="520.0" style="-fx-border-color: firebrick; visibility: hidden;">
+                                 <children>
+                                    <Label alignment="CENTER" layoutX="5.0" layoutY="4.0" prefHeight="17.0" prefWidth="520.0" text="Correction : Vingt euros" />
+                                 </children>
+                              </Pane>
+                              <ImageView fx:id="img_q1" fitHeight="30.0" fitWidth="35.0" layoutX="446.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="26.0" layoutY="196.0" prefHeight="98.0" prefWidth="530.0" style="-fx-border-color: #4444fe;">
+                           <children>
+                              <Label layoutX="22.0" layoutY="39.0" prefHeight="17.0" prefWidth="116.0" text="Trente et trois">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="8.0" layoutY="6.0" text="Proposition 2 :">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <JFXRadioButton layoutX="217.0" layoutY="41.0" text="Vrai" />
+                              <JFXRadioButton layoutX="329.0" layoutY="41.0" text="Faux" />
+                              <Pane fx:id="correc_q11" layoutX="5.0" layoutY="67.0" prefHeight="25.0" prefWidth="520.0" style="-fx-border-color: firebrick; visibility: hidden;">
+                                 <children>
+                                    <Label alignment="CENTER" layoutX="5.0" layoutY="4.0" prefHeight="17.0" prefWidth="520.0" text="Correction : Trente trois" />
+                                 </children>
+                              </Pane>
+                              <ImageView fitHeight="30.0" fitWidth="35.0" layoutX="446.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="26.0" layoutY="306.0" prefHeight="98.0" prefWidth="530.0" style="-fx-border-color: #4444fe;">
+                           <children>
+                              <Label layoutX="22.0" layoutY="39.0" prefHeight="17.0" prefWidth="116.0" text="Quatre-vingts">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="8.0" layoutY="6.0" text="Proposition 2 :">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <JFXRadioButton layoutX="217.0" layoutY="41.0" text="Vrai" />
+                              <JFXRadioButton layoutX="329.0" layoutY="41.0" text="Faux" />
+                              <Pane fx:id="correc_q111" layoutX="5.0" layoutY="67.0" prefHeight="25.0" prefWidth="520.0" style="-fx-border-color: firebrick; visibility: hidden;">
+                                 <children>
+                                    <Label alignment="CENTER" layoutX="5.0" layoutY="4.0" prefHeight="17.0" prefWidth="520.0" text="Correction : Quatre-vingts" />
+                                 </children>
+                              </Pane>
+                              <ImageView fitHeight="30.0" fitWidth="35.0" layoutX="446.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="26.0" layoutY="416.0" prefHeight="98.0" prefWidth="530.0" style="-fx-border-color: #4444fe;">
+                           <children>
+                              <Label layoutX="22.0" layoutY="39.0" prefHeight="17.0" prefWidth="116.0" text="Cent vingt et un">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="8.0" layoutY="6.0" text="Proposition 2 :">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <JFXRadioButton layoutX="217.0" layoutY="41.0" text="Vrai" />
+                              <JFXRadioButton layoutX="329.0" layoutY="41.0" text="Faux" />
+                              <Pane fx:id="correc_q112" layoutX="5.0" layoutY="67.0" prefHeight="25.0" prefWidth="520.0" style="-fx-border-color: firebrick; visibility: hidden;">
+                                 <children>
+                                    <Label alignment="CENTER" layoutX="5.0" layoutY="4.0" prefHeight="17.0" prefWidth="520.0" text="Correction : Cent vingt et un" />
+                                 </children>
+                              </Pane>
+                              <ImageView fitHeight="30.0" fitWidth="35.0" layoutX="446.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+          <Tab text="Untitled Tab 2">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
 </AnchorPane>
