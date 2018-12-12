@@ -6,7 +6,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="scene_tps_conjug" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="scene_tps_conjug" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Temps_et_Conjugaison_DController">
   <!-- TODO Add Nodes -->
   <children>
     <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="4.0" layoutX="412.0" layoutY="58.0" prefHeight="34.0" prefWidth="377.0" text="Conjugaison : Choix du temps passé simple ou imparfait" />
