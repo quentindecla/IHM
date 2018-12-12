@@ -52,8 +52,8 @@ public class Temps_et_Conjugaison_DController implements Initializable {
 
 	
 	public void initialize_cb() {
-		choice_box1.setItems(FXCollections.observableArrayList("vécumes", "vivions"));
-		choice_box2.setItems(FXCollections.observableArrayList("annonça", "annonçait"));
+		choice_box1.setItems(FXCollections.observableArrayList("gergerg", "gegerger", "gergerger"));//choice_box1.setItems(FXCollections.observableArrayList("vécumes", "vivions"));
+		/*choice_box2.setItems(FXCollections.observableArrayList("annonça", "annonçait"));
 		choice_box3.setItems(FXCollections.observableArrayList("passèrent", "passaient"));
 		choice_box4.setItems(FXCollections.observableArrayList("loua", "louait"));
 		choice_box5.setItems(FXCollections.observableArrayList("laboura", "labourait"));
@@ -61,7 +61,7 @@ public class Temps_et_Conjugaison_DController implements Initializable {
 		choice_box7.setItems(FXCollections.observableArrayList("marchai", "marchais"));
 		choice_box8.setItems(FXCollections.observableArrayList("vis", "voyais"));
 		choice_box9.setItems(FXCollections.observableArrayList("écrivit", "écrivait"));
-		choice_box10.setItems(FXCollections.observableArrayList("téléphona", "téléphonait"));
+		choice_box10.setItems(FXCollections.observableArrayList("téléphona", "téléphonait"));*/
 	}
 	
 	public void ouverture_conjug() throws Exception{
