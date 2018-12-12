@@ -3,26 +3,19 @@ package Controller;
 
 import javafx.fxml.FXML;
 
-import java.beans.EventHandler;
+
+
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.event.EventHandler;
-
+import com.jfoenix.controls.JFXButton;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Labeled;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.ColorPicker;
 import javafx.scene.control.ChoiceBox;
 
 public class Temps_et_Conjugaison_DController implements Initializable {
@@ -48,12 +41,14 @@ public class Temps_et_Conjugaison_DController implements Initializable {
 	private ChoiceBox<String> choice_box3;
 	@FXML
 	private AnchorPane scene_tps_conjug;
+	@FXML
+	private JFXButton btn_confirm;
 	
 
 	
 	public void initialize_cb() {
-		choice_box1.setItems(FXCollections.observableArrayList("gergerg", "gegerger", "gergerger"));//choice_box1.setItems(FXCollections.observableArrayList("vécumes", "vivions"));
-		/*choice_box2.setItems(FXCollections.observableArrayList("annonça", "annonçait"));
+		choice_box1.setItems(FXCollections.observableArrayList("vécûmes", "vivions"));
+		choice_box2.setItems(FXCollections.observableArrayList("annonça", "annonçait"));
 		choice_box3.setItems(FXCollections.observableArrayList("passèrent", "passaient"));
 		choice_box4.setItems(FXCollections.observableArrayList("loua", "louait"));
 		choice_box5.setItems(FXCollections.observableArrayList("laboura", "labourait"));
@@ -61,7 +56,7 @@ public class Temps_et_Conjugaison_DController implements Initializable {
 		choice_box7.setItems(FXCollections.observableArrayList("marchai", "marchais"));
 		choice_box8.setItems(FXCollections.observableArrayList("vis", "voyais"));
 		choice_box9.setItems(FXCollections.observableArrayList("écrivit", "écrivait"));
-		choice_box10.setItems(FXCollections.observableArrayList("téléphona", "téléphonait"));*/
+		choice_box10.setItems(FXCollections.observableArrayList("téléphona", "téléphonait"));
 	}
 	
 	public void ouverture_conjug() throws Exception{
@@ -79,40 +74,14 @@ public class Temps_et_Conjugaison_DController implements Initializable {
 		screen.close();
 		System.out.println("Fermeture de l'exercice de conjugaison");
 	}
-	
-	public void exo_debutant_text_trou() throws Exception{
-		if((choice_box1.getValue() == null) || (choice_box2.getValue() == null) || (choice_box3.getValue() == null) || (choice_box10.getValue() == null) || (choice_box4.getValue() == null) || (choice_box5.getValue() == null) || (choice_box6.getValue() == null) || (choice_box7.getValue() == null) || (choice_box8.getValue() == null) || (choice_box9.getValue() == null)){
-			System.out.println("Erreur, vous n'avez pas rempli tous les champs !");
-		}
-		}
+
 	
 	
-	public void launch_validation_ex1() throws Exception{
-		String selectedChoice1 = choice_box1.getSelectionModel().getSelectedItem();
-		String selectedChoice2 = choice_box2.getSelectionModel().getSelectedItem();
-		String selectedChoice3 = choice_box3.getSelectionModel().getSelectedItem();
-		String selectedChoice4 = choice_box4.getSelectionModel().getSelectedItem();
-		String selectedChoice5 = choice_box5.getSelectionModel().getSelectedItem();
-		String selectedChoice6 = choice_box6.getSelectionModel().getSelectedItem();
-		String selectedChoice7 = choice_box7.getSelectionModel().getSelectedItem();
-		String selectedChoice8 = choice_box8.getSelectionModel().getSelectedItem();
-		String selectedChoice9 = choice_box9.getSelectionModel().getSelectedItem();
-		String selectedChoice10 = choice_box10.getSelectionModel().getSelectedItem();
-		Button btn_confirm = new Button();
+	public void btn_confirm() throws Exception{
+
 		
-	
-		btn_confirm.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(MouseEvent event) {
-                System.out.println("Hello World!");
-            }
-        });
-		if((choice_box1.getValue() == null) || (choice_box2.getValue() == null) || (choice_box3.getValue() == null) || (choice_box10.getValue() == null) || (choice_box4.getValue() == null) || (choice_box5.getValue() == null) || (choice_box6.getValue() == null) || (choice_box7.getValue() == null) || (choice_box8.getValue() == null) || (choice_box9.getValue() == null)){
-			System.out.println("Erreur, vous n'avez pas rempli tous les champs !");
-			choice_box1.getStylesheets().add("-fx-background-color: red");
-		}
-		else if(selectedChoice1 != "vivions"){
-	 
+
+		
 	        choice_box1.getStylesheets().add("-fx-background-color: red");
 	        
 			Stage ex1_stage = new Stage();
@@ -128,8 +97,45 @@ public class Temps_et_Conjugaison_DController implements Initializable {
 			//Fermeture de l'ecran actuel
 			Stage screen = (Stage)scene_tps_conjug.getScene().getWindow();
 			screen.close();
+		
+	}
+	
+	@FXML public void validation (ActionEvent event) {
+		String selectedChoice1 = choice_box1.getSelectionModel().getSelectedItem();
+		String selectedChoice2 = choice_box2.getSelectionModel().getSelectedItem();
+		String selectedChoice3 = choice_box3.getSelectionModel().getSelectedItem();
+		String selectedChoice4 = choice_box4.getSelectionModel().getSelectedItem();
+		String selectedChoice5 = choice_box5.getSelectionModel().getSelectedItem();
+		String selectedChoice6 = choice_box6.getSelectionModel().getSelectedItem();
+		String selectedChoice7 = choice_box7.getSelectionModel().getSelectedItem();
+		String selectedChoice8 = choice_box8.getSelectionModel().getSelectedItem();
+		String selectedChoice9 = choice_box9.getSelectionModel().getSelectedItem();
+		String selectedChoice10 = choice_box10.getSelectionModel().getSelectedItem();
+		
+
+
+		
+		System.out.println("CA VALIDE");
+		if((choice_box1.getValue() == null) || (choice_box2.getValue() == null) || (choice_box3.getValue() == null) || (choice_box10.getValue() == null) || (choice_box4.getValue() == null) || (choice_box5.getValue() == null) || (choice_box6.getValue() == null) || (choice_box7.getValue() == null) || (choice_box8.getValue() == null) || (choice_box9.getValue() == null)){
+			System.out.println("Erreur, vous n'avez pas rempli tous les champs");
+//			choice_box1.setStyle("-fx-background-color: firebrick");
+//			choice_box2.setStyle("-fx-background-color: firebrick");
+//			choice_box3.setStyle("-fx-background-color: firebrick");
+//			choice_box4.setStyle("-fx-background-color: firebrick");
+//			choice_box5.setStyle("-fx-background-color: firebrick");
+//			choice_box6.setStyle("-fx-background-color: firebrick");
+//			choice_box7.setStyle("-fx-background-color: firebrick");
+//			choice_box8.setStyle("-fx-background-color: firebrick");
+//			choice_box9.setStyle("-fx-background-color: firebrick");
+//			choice_box10.setStyle("-fx-background-color: firebrick");
+			
+		}else if(selectedChoice1 == "vivions"){
+			choice_box1.setStyle("-fx-background-color: lime");
+			System.out.println("c'est censé être vert");
 		}
 	}
+	
+
 	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
