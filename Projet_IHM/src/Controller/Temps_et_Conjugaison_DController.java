@@ -43,6 +43,8 @@ public class Temps_et_Conjugaison_DController implements Initializable {
 	private AnchorPane scene_tps_conjug;
 	@FXML
 	private JFXButton btn_confirm;
+	@FXML
+	private JFXButton btn_retour;
 	
 
 	
@@ -59,45 +61,19 @@ public class Temps_et_Conjugaison_DController implements Initializable {
 		choice_box10.setItems(FXCollections.observableArrayList("téléphona", "téléphonait"));
 	}
 	
-	public void ouverture_conjug() throws Exception{
-		//Ouverture Ecran Conjugaison et temps au clic bouton
-		Stage mp_stage = new Stage();
-		Parent root = FXMLLoader.load(getClass().getResource("../FXML/AtelierController.fxml")); 	
-		Scene mp_scene = new Scene(root);
-		mp_stage.setTitle("Exercice");
-		mp_stage.setResizable(false);
-		mp_stage.setScene(mp_scene);
-		mp_stage.show();
-				
-		//Fermeture de l'ecran actuel
-		Stage screen = (Stage)scene_tps_conjug.getScene().getWindow();
-		screen.close();
-		System.out.println("Fermeture de l'exercice de conjugaison");
-	}
-
 	
-	
-	public void btn_confirm() throws Exception{
-
-		
-
-		
-	        choice_box1.getStylesheets().add("-fx-background-color: red");
-	        
-			Stage ex1_stage = new Stage();
-			Parent root = FXMLLoader.load(getClass().getResource("../FXML/Temps_et_Conjugaison_D.fxml")); 	
-			Scene ex1_scene = new Scene(root);
-			ex1_stage.setTitle("Exercice - Temps & Conjugaison");
-			ex1_stage.setScene(ex1_scene);
-			ex1_stage.setResizable(false);
-			ex1_stage.show();
+	public void retour_Atelier() throws Exception{     
+			Stage stage = new Stage();
+			Parent root = FXMLLoader.load(getClass().getResource("../FXML/Atelier.fxml")); 	
+			Scene scene = new Scene(root);
+			stage.setTitle("Exercice");
+			stage.setScene(scene);
+			stage.setResizable(false);
+			stage.show();
 					
-			
-			
 			//Fermeture de l'ecran actuel
 			Stage screen = (Stage)scene_tps_conjug.getScene().getWindow();
 			screen.close();
-		
 	}
 	
 	@FXML public void validation (ActionEvent event) {
@@ -112,30 +88,81 @@ public class Temps_et_Conjugaison_DController implements Initializable {
 		String selectedChoice9 = choice_box9.getSelectionModel().getSelectedItem();
 		String selectedChoice10 = choice_box10.getSelectionModel().getSelectedItem();
 		
-
-
-		
-		System.out.println("CA VALIDE");
+		System.out.println("Tu as bien cliqué sur valider");
 		if((choice_box1.getValue() == null) || (choice_box2.getValue() == null) || (choice_box3.getValue() == null) || (choice_box10.getValue() == null) || (choice_box4.getValue() == null) || (choice_box5.getValue() == null) || (choice_box6.getValue() == null) || (choice_box7.getValue() == null) || (choice_box8.getValue() == null) || (choice_box9.getValue() == null)){
-			System.out.println("Erreur, vous n'avez pas rempli tous les champs");
-//			choice_box1.setStyle("-fx-background-color: firebrick");
-//			choice_box2.setStyle("-fx-background-color: firebrick");
-//			choice_box3.setStyle("-fx-background-color: firebrick");
-//			choice_box4.setStyle("-fx-background-color: firebrick");
-//			choice_box5.setStyle("-fx-background-color: firebrick");
-//			choice_box6.setStyle("-fx-background-color: firebrick");
-//			choice_box7.setStyle("-fx-background-color: firebrick");
-//			choice_box8.setStyle("-fx-background-color: firebrick");
-//			choice_box9.setStyle("-fx-background-color: firebrick");
-//			choice_box10.setStyle("-fx-background-color: firebrick");
-			
-		}else if(selectedChoice1 == "vivions"){
+			System.out.println("Erreur, vous n'avez pas rempli tous les champs");		
+		}
+		
+		if(selectedChoice1 == "vivions"){
 			choice_box1.setStyle("-fx-background-color: lime");
-			System.out.println("c'est censé être vert");
+		}
+		else if(selectedChoice1 == "vécûmes"){
+			choice_box1.setStyle("-fx-background-color: firebrick");
+		}
+		
+		if(selectedChoice2 == "annonça"){
+			choice_box2.setStyle("-fx-background-color: lime");
+		}
+		else if(selectedChoice2 == "annonçait"){
+			choice_box2.setStyle("-fx-background-color: firebrick");
+		}
+		
+		if(selectedChoice3 == "passaient"){
+			choice_box3.setStyle("-fx-background-color: lime");
+		}
+		else if(selectedChoice3 == "passèrent"){
+			choice_box3.setStyle("-fx-background-color: firebrick");
+		}
+		
+		if(selectedChoice4 == "loua"){
+			choice_box4.setStyle("-fx-background-color: lime");
+		}
+		else if(selectedChoice4 == "louait"){
+			choice_box4.setStyle("-fx-background-color: firebrick");
+		}
+		
+		if(selectedChoice5 == "labourait"){
+			choice_box5.setStyle("-fx-background-color: lime");
+		}
+		else if(selectedChoice5 == "laboura"){
+			choice_box5.setStyle("-fx-background-color: firebrick");
+		}
+		
+		if(selectedChoice6 == "tomba"){
+			choice_box6.setStyle("-fx-background-color: lime");
+		}
+		else if(selectedChoice6 == "tombait"){
+			choice_box6.setStyle("-fx-background-color: firebrick");
+		}
+		
+		if(selectedChoice7 == "marchais"){
+			choice_box7.setStyle("-fx-background-color: lime");
+		}
+		else if(selectedChoice7 == "marchai"){
+			choice_box7.setStyle("-fx-background-color: firebrick");
+		}
+		
+		if(selectedChoice8 == "vis"){
+			choice_box8.setStyle("-fx-background-color: lime");
+		}
+		else if(selectedChoice8 == "voyais"){
+			choice_box8.setStyle("-fx-background-color: firebrick");
+		}
+		
+		if(selectedChoice9 == "écrivait"){
+			choice_box9.setStyle("-fx-background-color: lime");
+		}
+		else if(selectedChoice9 == "écrivit"){
+			choice_box9.setStyle("-fx-background-color: firebrick");
+		}
+		
+		if(selectedChoice10 == "téléphona"){
+			choice_box10.setStyle("-fx-background-color: lime");
+		}
+		else if(selectedChoice10 == "téléphonait"){
 		}
 	}
 	
-
 	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {

@@ -60,7 +60,7 @@ public class AtelierController implements Initializable{
 			Stage ex1_stage = new Stage();
 			Parent root = FXMLLoader.load(getClass().getResource("../FXML/Temps_et_Conjugaison_D.fxml")); 	
 			Scene ex1_scene = new Scene(root);
-			ex1_stage.setTitle("Exercice - Temps & Conjugaison");
+			ex1_stage.setTitle("Exercise - Tense & Conjugation");
 			ex1_stage.setScene(ex1_scene);
 			ex1_stage.setResizable(false);
 			ex1_stage.show();
