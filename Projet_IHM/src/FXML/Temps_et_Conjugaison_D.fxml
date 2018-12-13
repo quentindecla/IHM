@@ -20,114 +20,118 @@
          <font>
             <Font name="System Bold" size="25.0" />
          </font></Label>
-    <Label layoutX="218.0" layoutY="192.0" text="Nous" />
-    <Label layoutX="325.0" layoutY="192.0" prefWidth="442.0" text="(vivre) depuis quelques années à Marseille quand mon père" />
-    <Label layoutX="740.0" layoutY="194.0" text="(annoncer) mutation à Paris." />
-    <ChoiceBox fx:id="choice_box1" layoutX="260.0" layoutY="188.0" prefWidth="56.0">
-      <items>
-        <FXCollections fx:factory="observableArrayList">
-          <String fx:value="Item 1" />
-          <String fx:value="Item 2" />
-          <String fx:value="Item 3" />
-        </FXCollections>
-      </items>
-    </ChoiceBox>
-    <ChoiceBox fx:id="choice_box2" layoutX="646.0" layoutY="190.0" prefHeight="18.0" prefWidth="86.0">
-      <items>
-        <FXCollections fx:factory="observableArrayList">
-          <String fx:value="Item 1" />
-          <String fx:value="Item 2" />
-          <String fx:value="Item 3" />
-        </FXCollections>
-      </items>
-    </ChoiceBox>
-    <ChoiceBox fx:id="choice_box10" layoutX="770.0" layoutY="408.0" prefWidth="88.0">
-      <items>
-        <FXCollections fx:factory="observableArrayList">
-          <String fx:value="Item 1" />
-          <String fx:value="Item 2" />
-          <String fx:value="Item 3" />
-        </FXCollections>
-      </items>
-    </ChoiceBox>
-    <ChoiceBox fx:id="choice_box9" layoutX="353.0" layoutY="408.0" prefWidth="62.0">
-      <items>
-        <FXCollections fx:factory="observableArrayList">
-          <String fx:value="Item 1" />
-          <String fx:value="Item 2" />
-          <String fx:value="Item 3" />
-        </FXCollections>
-      </items>
-    </ChoiceBox>
-    <ChoiceBox fx:id="choice_box7" layoutX="233.0" layoutY="340.0" prefWidth="80.0">
-      <items>
-        <FXCollections fx:factory="observableArrayList">
-          <String fx:value="Item 1" />
-          <String fx:value="Item 2" />
-          <String fx:value="Item 3" />
-        </FXCollections>
-      </items>
-    </ChoiceBox>
-    <ChoiceBox fx:id="choice_box8" layoutX="676.0" layoutY="340.0" prefWidth="56.0">
-      <items>
-        <FXCollections fx:factory="observableArrayList">
-          <String fx:value="Item 1" />
-          <String fx:value="Item 2" />
-          <String fx:value="Item 3" />
-        </FXCollections>
-      </items>
-    </ChoiceBox>
-    <ChoiceBox fx:id="choice_box6" layoutX="646.0" layoutY="295.0" prefWidth="80.0">
-      <items>
-        <FXCollections fx:factory="observableArrayList">
-          <String fx:value="Item 1" />
-          <String fx:value="Item 2" />
-          <String fx:value="Item 3" />
-        </FXCollections>
-      </items>
-    </ChoiceBox>
-    <ChoiceBox fx:id="choice_box5" layoutX="276.0" layoutY="295.0" prefWidth="80.0">
-      <items>
-        <FXCollections fx:factory="observableArrayList">
-          <String fx:value="Item 1" />
-          <String fx:value="Item 2" />
-          <String fx:value="Item 3" />
-        </FXCollections>
-      </items>
-    </ChoiceBox>
-    <ChoiceBox fx:id="choice_box4" layoutX="334.0" layoutY="261.0" prefWidth="56.0">
-      <items>
-        <FXCollections fx:factory="observableArrayList">
-          <String fx:value="Item 1" />
-          <String fx:value="Item 2" />
-          <String fx:value="Item 3" />
-        </FXCollections>
-      </items>
-    </ChoiceBox>
-    <ChoiceBox fx:id="choice_box3" layoutX="297.0" layoutY="232.0" prefWidth="56.0">
-      <items>
-        <FXCollections fx:factory="observableArrayList">
-          <String fx:value="Item 1" />
-          <String fx:value="Item 2" />
-          <String fx:value="Item 3" />
-        </FXCollections>
-      </items>
-    </ChoiceBox>
-    <Label layoutX="218.0" layoutY="235.0" text="Mes parents" />
-    <Label layoutX="218.0" layoutY="263.0" text="suivante, Maman" />
-    <Label layoutX="369.0" layoutY="236.0" text="(passer) tous les ans un mois de vacances chez Grand-père. Brusquement, au printemps de l'année" />
-    <Label layoutX="398.0" layoutY="264.0" text="(louer) une villa au bord de la mer." />
-    <Label layoutX="218.0" layoutY="298.0" text="Mon père" />
-    <Label layoutX="367.0" layoutY="299.0" text="(labourer) le champ lorsque brutalement le tracteur" />
-    <Label layoutX="739.0" layoutY="299.0" text="(tomber) en panne." />
-    <Label layoutX="218.0" layoutY="342.0" text="Je" />
-    <Label layoutX="316.0" layoutY="342.0" text="(marcher) depuis deux heures en bordure des champs. Soudain, je" />
-    <Label layoutX="740.0" layoutY="342.0" text="(voir) surgir une voiture venue " />
-    <Label layoutX="218.0" layoutY="372.0" text="de nulle part." />
-    <Label layoutX="218.0" layoutY="412.0" text="Habituellement, Sophie" />
-    <Label layoutX="425.0" layoutY="412.0" text="(écrire) à sa grand-mère toutes les semaines. Ce jour là, elle lui" />
-    <Label layoutX="870.0" layoutY="412.0" prefWidth="86.0" text="(téléphoner)." />
-      <JFXButton fx:id="btn_confirm" buttonType="RAISED" layoutX="696.0" layoutY="476.0" onAction="#validation" prefHeight="57.0" prefWidth="149.0" style="-fx-background-color: #4444FE;" text="Check !" textFill="WHITE" />
-      <JFXButton fx:id="btn_retour" buttonType="RAISED" layoutX="369.0" layoutY="476.0" onAction="#retour_Atelier" prefHeight="57.0" prefWidth="149.0" style="-fx-background-color: #4444FE;" text="Return" textFill="WHITE" />
+      <JFXButton fx:id="btn_confirm" buttonType="RAISED" layoutX="661.0" layoutY="476.0" onAction="#validation" prefHeight="40.0" prefWidth="163.0" style="-fx-background-color: #4444FE;" text="Check" textFill="WHITE" />
+      <JFXButton fx:id="btn_retour" buttonType="RAISED" layoutX="378.0" layoutY="476.0" onAction="#retour_Atelier" prefHeight="40.0" prefWidth="163.0" style="-fx-background-color: #4444FE;" text="Return" textFill="WHITE" />
+      <Pane layoutX="184.0" layoutY="148.0" prefHeight="289.0" prefWidth="833.0" style="-fx-border-color: #4444fe;">
+         <children>
+          <Label layoutX="27.0" layoutY="14.0" text="Nous" />
+          <ChoiceBox fx:id="choice_box1" layoutX="74.0" layoutY="11.0" prefWidth="56.0">
+            <items>
+              <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Item 1" />
+                <String fx:value="Item 2" />
+                <String fx:value="Item 3" />
+              </FXCollections>
+            </items>
+          </ChoiceBox>
+          <Label layoutX="147.0" layoutY="15.0" prefWidth="442.0" text="(vivre) depuis quelques années à Marseille quand mon père" />
+          <ChoiceBox fx:id="choice_box2" layoutX="474.0" layoutY="11.0" prefHeight="18.0" prefWidth="86.0">
+            <items>
+              <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Item 1" />
+                <String fx:value="Item 2" />
+                <String fx:value="Item 3" />
+              </FXCollections>
+            </items>
+          </ChoiceBox>
+          <Label layoutX="576.0" layoutY="15.0" text="(annoncer) mutation à Paris." />
+          <Label layoutX="27.0" layoutY="54.0" text="Mes parents" />
+          <ChoiceBox fx:id="choice_box3" layoutX="102.0" layoutY="50.0" prefWidth="56.0">
+            <items>
+              <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Item 1" />
+                <String fx:value="Item 2" />
+                <String fx:value="Item 3" />
+              </FXCollections>
+            </items>
+          </ChoiceBox>
+          <Label layoutX="171.0" layoutY="54.0" text="(passer) tous les ans un mois de vacances chez Grand-père. Brusquement, au printemps de l'année" />
+          <Label layoutX="27.0" layoutY="94.0" text="suivante, Maman" />
+          <ChoiceBox fx:id="choice_box4" layoutX="119.0" layoutY="90.0" prefWidth="56.0">
+            <items>
+              <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Item 1" />
+                <String fx:value="Item 2" />
+                <String fx:value="Item 3" />
+              </FXCollections>
+            </items>
+          </ChoiceBox>
+          <Label layoutX="186.0" layoutY="94.0" text="(louer) une villa au bord de la mer." />
+          <Label layoutX="27.0" layoutY="137.0" text="Mon père" />
+          <ChoiceBox fx:id="choice_box5" layoutX="90.0" layoutY="133.0" prefWidth="80.0">
+            <items>
+              <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Item 1" />
+                <String fx:value="Item 2" />
+                <String fx:value="Item 3" />
+              </FXCollections>
+            </items>
+          </ChoiceBox>
+          <Label layoutX="186.0" layoutY="137.0" text="(labourer) le champ lorsque brutalement le tracteur" />
+          <ChoiceBox fx:id="choice_box6" layoutX="474.0" layoutY="133.0" prefWidth="80.0">
+            <items>
+              <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Item 1" />
+                <String fx:value="Item 2" />
+                <String fx:value="Item 3" />
+              </FXCollections>
+            </items>
+          </ChoiceBox>
+          <Label layoutX="570.0" layoutY="137.0" text="(tomber) en panne." />
+          <Label layoutX="27.0" layoutY="177.0" text="Je" />
+          <ChoiceBox fx:id="choice_box7" layoutX="50.0" layoutY="173.0" prefWidth="80.0">
+            <items>
+              <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Item 1" />
+                <String fx:value="Item 2" />
+                <String fx:value="Item 3" />
+              </FXCollections>
+            </items>
+          </ChoiceBox>
+          <Label layoutX="141.0" layoutY="177.0" text="(marcher) depuis deux heures en bordure des champs. Soudain, je" />
+          <ChoiceBox fx:id="choice_box8" layoutX="498.0" layoutY="173.0" prefHeight="17.0" prefWidth="56.0">
+            <items>
+              <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Item 1" />
+                <String fx:value="Item 2" />
+                <String fx:value="Item 3" />
+              </FXCollections>
+            </items>
+          </ChoiceBox>
+          <Label layoutX="569.0" layoutY="177.0" text="(voir) surgir une voiture venue " />
+          <Label layoutX="27.0" layoutY="214.0" prefHeight="17.0" prefWidth="70.0" text="de nulle part." />
+          <Label layoutX="27.0" layoutY="257.0" text="Habituellement, Sophie" />
+          <ChoiceBox fx:id="choice_box9" layoutX="158.0" layoutY="253.0" prefWidth="62.0">
+            <items>
+              <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Item 1" />
+                <String fx:value="Item 2" />
+                <String fx:value="Item 3" />
+              </FXCollections>
+            </items>
+          </ChoiceBox>
+          <Label layoutX="230.0" layoutY="257.0" text="(écrire) à sa grand-mère toutes les semaines. Ce jour là, elle lui" />
+          <ChoiceBox fx:id="choice_box10" layoutX="569.0" layoutY="253.0" prefWidth="88.0">
+            <items>
+              <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Item 1" />
+                <String fx:value="Item 2" />
+                <String fx:value="Item 3" />
+              </FXCollections>
+            </items>
+          </ChoiceBox>
+          <Label layoutX="671.0" layoutY="257.0" prefWidth="86.0" text="(téléphoner)." />
+         </children>
+      </Pane>
   </children>
 </AnchorPane>
