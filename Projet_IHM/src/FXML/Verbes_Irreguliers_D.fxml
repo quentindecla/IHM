@@ -1,32 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import com.jfoenix.controls.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="scene_verb_irre" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Verbes_Irreguliers_DController">
    <children>
-      <TableView fx:id="table_vieuw" layoutX="671.0" layoutY="52.0" prefHeight="476.0" prefWidth="498.0">
-        <columns>
-          <TableColumn id="infinitif_column" fx:id="column_inf" editable="false" prefWidth="165.0" text="Infinitif" />
-          <TableColumn fx:id="column_pret" editable="false" minWidth="0.0" prefWidth="151.0" text="Prétérit" />
-            <TableColumn fx:id="column_pp" editable="false" minWidth="0.0" prefWidth="181.0" text="Participe passé" />
-        </columns>
-      </TableView>
-      <Label layoutX="98.0" layoutY="52.0" text="Label" />
-      <Label layoutX="231.0" layoutY="52.0" text="Label" />
-      <Label layoutX="367.0" layoutY="52.0" text="Label" />
-      <Label layoutX="98.0" layoutY="159.0" text="Label" />
-      <Label layoutX="98.0" layoutY="117.0" text="Label" />
-      <Label layoutX="98.0" layoutY="194.0" text="Label" />
-      <Label layoutX="98.0" layoutY="225.0" text="Label" />
-      <Label layoutX="98.0" layoutY="255.0" text="Label" />
-      <Label layoutX="98.0" layoutY="290.0" text="Label" />
-      <Label layoutX="98.0" layoutY="329.0" text="Label" />
-      <Label layoutX="186.0" layoutY="255.0" text="Label" />
-      <Label layoutX="98.0" layoutY="361.0" text="Label" />
-      <VBox layoutX="448.0" layoutY="166.0" prefHeight="200.0" prefWidth="100.0" />
+      <VBox fx:id="v_box" alignment="CENTER" layoutX="320.0" layoutY="81.0" prefHeight="380.0" prefWidth="560.0">
+         <children>
+            <HBox fx:id="hbox1" alignment="CENTER" centerShape="false" prefHeight="38.0" prefWidth="420.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Infinitif">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Region prefHeight="38.0" prefWidth="48.0" HBox.hgrow="ALWAYS" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="85.0" text="Imparfait">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Region prefHeight="34.0" prefWidth="50.0" HBox.hgrow="ALWAYS" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="129.0" text="Participe passé">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" centerShape="false" prefHeight="38.0" prefWidth="420.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Avoir (nous)">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Region prefHeight="34.0" prefWidth="50.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></Region>
+                  <TextArea fx:id="PRET_avoir" prefHeight="36.0" prefWidth="114.0" />
+                  <Region prefHeight="38.0" prefWidth="57.0" HBox.hgrow="ALWAYS" />
+                  <TextArea fx:id="PP_avoir" prefHeight="36.0" prefWidth="128.0" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="4.0" top="4.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" centerShape="false" prefHeight="38.0" prefWidth="420.0">
+               <children>
+                  <Label text="Etre (je)">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Region prefHeight="34.0" prefWidth="85.0" HBox.hgrow="ALWAYS" />
+                  <TextArea fx:id="PRET_etre" prefHeight="36.0" prefWidth="114.0" />
+                  <Region prefHeight="38.0" prefWidth="57.0" HBox.hgrow="ALWAYS" />
+                  <TextArea fx:id="PP_etre" prefHeight="36.0" prefWidth="128.0" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="4.0" top="4.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" centerShape="false" prefHeight="38.0" prefWidth="420.0">
+               <children>
+                  <Label text="Trouver (tu)">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Region prefHeight="34.0" prefWidth="92.0" HBox.hgrow="ALWAYS" />
+                  <TextArea fx:id="PRET_trouver" prefHeight="36.0" prefWidth="114.0" />
+                  <Region prefHeight="36.0" prefWidth="95.0" HBox.hgrow="ALWAYS" />
+                  <TextArea fx:id="PP_trouver" prefHeight="36.0" prefWidth="128.0" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="4.0" top="4.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" centerShape="false" prefHeight="38.0" prefWidth="420.0">
+               <children>
+                  <Label text="Marcher (elles)">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Region prefHeight="34.0" prefWidth="33.0" HBox.hgrow="ALWAYS" />
+                  <TextArea fx:id="PRET_marcher" prefHeight="36.0" prefWidth="114.0" />
+                  <Region prefHeight="36.0" prefWidth="58.0" HBox.hgrow="ALWAYS" />
+                  <TextArea fx:id="PP_marcher" prefHeight="36.0" prefWidth="128.0" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="4.0" top="4.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" centerShape="false" prefHeight="38.0" prefWidth="420.0">
+               <children>
+                  <Label text="Construire (vous)">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Region prefHeight="34.0" prefWidth="31.0" HBox.hgrow="ALWAYS" />
+                  <TextArea fx:id="PRET_construire" prefHeight="37.0" prefWidth="114.0" />
+                  <Region prefHeight="37.0" prefWidth="75.0" HBox.hgrow="ALWAYS" />
+                  <TextArea fx:id="PP_construire" prefHeight="37.0" prefWidth="128.0" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="4.0" top="4.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" centerShape="false" prefHeight="38.0" prefWidth="420.0">
+               <children>
+                  <Label text="Finir (nous)">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Region prefHeight="34.0" prefWidth="61.0" HBox.hgrow="ALWAYS" />
+                  <TextArea fx:id="PRET_finir" prefHeight="37.0" prefWidth="114.0" />
+                  <Region prefHeight="38.0" prefWidth="57.0" HBox.hgrow="ALWAYS" />
+                  <TextArea fx:id="PP_finir" prefHeight="37.0" prefWidth="128.0" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="4.0" top="4.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" centerShape="false" prefHeight="38.0" prefWidth="420.0">
+               <children>
+                  <Label text="Tenir (on)">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Region prefHeight="34.0" prefWidth="74.0" HBox.hgrow="ALWAYS" />
+                  <TextArea fx:id="PRET_tenir" prefHeight="37.0" prefWidth="114.0" />
+                  <Region prefHeight="38.0" prefWidth="57.0" HBox.hgrow="ALWAYS" />
+                  <TextArea fx:id="PP_tenir" prefHeight="37.0" prefWidth="128.0" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="4.0" top="4.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" centerShape="false" prefHeight="38.0" prefWidth="420.0">
+               <children>
+                  <Label text="Choisir (il)">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Region prefHeight="34.0" prefWidth="73.0" HBox.hgrow="ALWAYS" />
+                  <TextArea fx:id="PRET_choisir" prefHeight="37.0" prefWidth="114.0" />
+                  <Region prefHeight="38.0" prefWidth="57.0" HBox.hgrow="ALWAYS" />
+                  <TextArea fx:id="PP_choisir" prefHeight="37.0" prefWidth="128.0" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="4.0" top="4.0" />
+               </VBox.margin>
+            </HBox>
+         </children></VBox>
+      <Label layoutX="385.0" layoutY="22.0" style="-fx-text-fill: #4444FE;" text="Complete with the right form of the verb">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="return_btn" layoutX="454.0" layoutY="514.0" onAction="#retour_Atelier" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #4444FE;" text="Return" textFill="WHITE" />
+      <JFXButton fx:id="check_btn" layoutX="689.0" layoutY="514.0" onAction="#validation" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #4444FE;" text="Check !" textFill="WHITE" />
    </children>
 </AnchorPane>

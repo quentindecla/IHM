@@ -88,10 +88,7 @@ public class Temps_et_Conjugaison_DController implements Initializable {
 		String selectedChoice9 = choice_box9.getSelectionModel().getSelectedItem();
 		String selectedChoice10 = choice_box10.getSelectionModel().getSelectedItem();
 		
-		System.out.println("Tu as bien cliqué sur valider");
-		if((choice_box1.getValue() == null) || (choice_box2.getValue() == null) || (choice_box3.getValue() == null) || (choice_box10.getValue() == null) || (choice_box4.getValue() == null) || (choice_box5.getValue() == null) || (choice_box6.getValue() == null) || (choice_box7.getValue() == null) || (choice_box8.getValue() == null) || (choice_box9.getValue() == null)){
-			System.out.println("Erreur, vous n'avez pas rempli tous les champs");		
-		}
+		//System.out.println("Tu as bien cliqué sur valider");
 		
 		if(selectedChoice1 == "vivions"){
 			choice_box1.setStyle("-fx-background-color: lime");
@@ -160,6 +157,7 @@ public class Temps_et_Conjugaison_DController implements Initializable {
 			choice_box10.setStyle("-fx-background-color: lime");
 		}
 		else if(selectedChoice10 == "téléphonait"){
+			choice_box10.setStyle("-fx-background-color: firebrick");
 		}
 	}
 	
