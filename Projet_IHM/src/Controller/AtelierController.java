@@ -1,7 +1,6 @@
 package Controller;
 
 import java.net.URL;
-import java.nio.charset.Charset;
 import java.util.ResourceBundle;
 
 import javafx.collections.FXCollections;
@@ -121,7 +120,7 @@ public class AtelierController implements Initializable{
 			System.out.println("Difficulté : " + difficulty_cb.getValue());
 			
 			Stage ex4_stage = new Stage();
-			Parent root = FXMLLoader.load(getClass().getResource("../FXML/Grammaire.fxml")); 	
+			Parent root = FXMLLoader.load(getClass().getResource("../FXML/Prononciation_D.fxml")); 	
 			Scene ex4_scene = new Scene(root);
 			ex4_stage.setTitle("Exercice - Prononciation_D");
 			ex4_stage.setScene(ex4_scene);

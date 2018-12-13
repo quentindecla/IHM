@@ -1,6 +1,7 @@
 package Controller;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 
 import java.net.URL;
@@ -9,9 +10,12 @@ import java.util.ResourceBundle;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXRadioButton;
 
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.image.ImageView;
-
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 
 public class Grammaire_DController implements Initializable{
 	@FXML
@@ -24,6 +28,8 @@ public class Grammaire_DController implements Initializable{
 	private ImageView img_q1, img2_q1, img_q2, img2_q2, img_q3, img2_q3, img_q4, img2_q4, img_q5, img2_q5, img_q6, img2_q6, img_q7, img2_q7, img_q8, img2_q8;
 	@FXML
 	private JFXButton btn_valider, btn_retour;
+	@FXML
+	private AnchorPane grammaire_container;
 	
 	public void true1_RDButton(){
 		true1.setSelected(true);
@@ -199,8 +205,20 @@ public class Grammaire_DController implements Initializable{
 		}
 	}
 	
-	public void back_btn() {
-		
+	public void back_btn() throws Exception{
+		//Ouverture Ecran Atelier au clic bouton
+		Stage atelier_stage = new Stage();
+		Parent root = FXMLLoader.load(getClass().getResource("../FXML/Atelier.fxml")); 	
+		Scene atelier_scene = new Scene(root);
+		atelier_stage.setTitle("Atelier");
+		atelier_stage.setScene(atelier_scene);
+		atelier_stage.setResizable(false);
+		atelier_stage.show();
+						
+		//Fermeture de l'ecran actuel
+		Stage screen = (Stage)grammaire_container.getScene().getWindow();
+		screen.close();
+		System.out.println("Fermeture de Grammaire");
 	}
 	
 	@Override
