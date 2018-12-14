@@ -27,11 +27,11 @@
         <Image url="@../../img/drapeau_espagnol.png" />
       </image>
     </ImageView>
-      <JFXButton fx:id="leave_btn" layoutX="546.0" layoutY="547.0" onAction="#Leave" prefHeight="40.0" prefWidth="111.0" ripplerFill="BLACK" style="-fx-background-color: #4444fe;" text="Quitter" textFill="WHITE" />
+      <JFXButton fx:id="leave_btn" layoutX="546.0" layoutY="547.0" onAction="#Leave" prefHeight="40.0" prefWidth="111.0" ripplerFill="BLACK" style="-fx-background-color: #4444fe;" text="Leave" textFill="WHITE" />
       <Pane layoutX="252.0" layoutY="224.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #4444fe;">
          <children>
             <JFXButton fx:id="magazine_btn" buttonType="RAISED" layoutX="45.0" layoutY="140.0" prefHeight="40.0" prefWidth="111.0" ripplerFill="BLACK" style="-fx-background-color: #4444fe;" text="Magazine" textFill="WHITE" />
-            <Label fx:id="label_magazine" alignment="CENTER" layoutX="5.0" layoutY="10.0" prefHeight="119.0" prefWidth="190.0" text="Découvrez la France" />
+            <Label fx:id="label_magazine" alignment="CENTER" layoutX="5.0" layoutY="10.0" prefHeight="119.0" prefWidth="190.0" text="Discover France" />
          </children>
          <effect>
             <Blend />
@@ -39,8 +39,8 @@
       </Pane>
       <Pane fx:id="label_atelier" layoutX="502.0" layoutY="224.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #4444fe;">
          <children>
-            <JFXButton fx:id="atelier_btn" buttonType="RAISED" layoutX="45.0" layoutY="140.0" onAction="#Open_Atelier" prefHeight="40.0" prefWidth="111.0" ripplerFill="BLACK" style="-fx-background-color: #4444fe;" text="Atelier" textFill="WHITE" />
-            <Label fx:id="label_magazine1" alignment="CENTER" layoutX="5.0" layoutY="10.0" prefHeight="119.0" prefWidth="190.0" text="Exercez &amp; Améliorez vous" />
+            <JFXButton fx:id="atelier_btn" buttonType="RAISED" layoutX="45.0" layoutY="140.0" onAction="#Open_Atelier" prefHeight="40.0" prefWidth="111.0" ripplerFill="BLACK" style="-fx-background-color: #4444fe;" text="Workshop" textFill="WHITE" />
+            <Label fx:id="label_magazine1" alignment="CENTER" layoutX="5.0" layoutY="10.0" prefHeight="119.0" prefWidth="190.0" text="Practice &amp; improve" />
          </children>
          <effect>
             <Blend />
@@ -48,8 +48,8 @@
       </Pane>
       <Pane fx:id="label_outil" layoutX="752.0" layoutY="224.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #4444fe;">
          <children>
-            <JFXButton fx:id="outil_btn" buttonType="RAISED" layoutX="45.0" layoutY="140.0" prefHeight="40.0" prefWidth="111.0" ripplerFill="BLACK" style="-fx-background-color: #4444fe;" text="Outil" textFill="WHITE" />
-            <Label fx:id="label_magazine2" alignment="CENTER" layoutX="5.0" layoutY="10.0" prefHeight="119.0" prefWidth="190.0" text="Besoin d'aide ?" />
+            <JFXButton fx:id="outil_btn" buttonType="RAISED" layoutX="45.0" layoutY="140.0" onAction="#Open_Outil" prefHeight="40.0" prefWidth="111.0" ripplerFill="BLACK" style="-fx-background-color: #4444fe;" text="Tool" textFill="WHITE" />
+            <Label fx:id="label_magazine2" alignment="CENTER" layoutX="5.0" layoutY="10.0" prefHeight="119.0" prefWidth="190.0" text="Need help ?" />
          </children>
          <effect>
             <Blend />

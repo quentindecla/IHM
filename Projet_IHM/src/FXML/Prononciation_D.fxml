@@ -143,7 +143,7 @@
                   </ImageView>
                </children>
             </Pane>
-            <JFXButton fx:id="btn_valider" buttonType="RAISED" layoutX="644.0" layoutY="533.0" onAction="#check_answers" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #4444fe;" text="Valider" textFill="WHITE" />
+            <JFXButton fx:id="btn_valider" buttonType="RAISED" layoutX="644.0" layoutY="533.0" onAction="#check_answers" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #4444fe;" text="Check" textFill="WHITE" />
             <Pane layoutX="644.0" layoutY="86.0" prefHeight="98.0" prefWidth="530.0" style="-fx-border-color: #4444fe;">
                <children>
                   <Label alignment="CENTER" layoutX="22.0" layoutY="39.0" prefHeight="17.0" prefWidth="116.0" text="/sypɔʀte/ :">
@@ -278,8 +278,8 @@
                   </ImageView>
                </children>
             </Pane>
-            <JFXButton fx:id="btn_retour" buttonType="RAISED" layoutX="393.0" layoutY="533.0" onAction="#back_to_Atelier" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #4444fe;" text="Retour" textFill="WHITE" />
-            <Label alignment="CENTER" layoutX="401.0" layoutY="27.0" prefHeight="38.0" prefWidth="399.0" text="Restituez les mots suivants" textFill="#4444fe">
+            <JFXButton fx:id="btn_retour" buttonType="RAISED" layoutX="393.0" layoutY="533.0" onAction="#back_to_Atelier" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #4444fe;" text="Back" textFill="WHITE" />
+            <Label alignment="CENTER" layoutX="401.0" layoutY="27.0" prefHeight="38.0" prefWidth="399.0" text="Find the words" textFill="#4444fe">
                <font>
                   <Font name="System Bold" size="25.0" />
                </font></Label>

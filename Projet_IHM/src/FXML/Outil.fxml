@@ -7,17 +7,17 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="5000.0" prefWidth="1200.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<TabPane fx:id="outil_container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.OutilController">
   <tabs>
     <Tab text="Leçon : Nombres cardinaux">
          <content>
-            <ScrollPane prefHeight="1025.0" prefWidth="1199.0">
+            <ScrollPane prefHeight="500.0" prefWidth="1200.0">
                <content>
-                  <AnchorPane prefHeight="2000.0" prefWidth="1180.0">
+                  <AnchorPane prefHeight="1780.0" prefWidth="1200.0">
                      <children>
                         <Label layoutX="30.0" layoutY="30.0" text="What are they used for ?">
                            <font>
-                              <Font name="System Bold" size="15.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
                         <Label layoutX="30.0" layoutY="80.0" prefHeight="21.0" prefWidth="232.0" text="They are used to express quantity">
@@ -27,7 +27,7 @@
                         </Label>
                         <Label layoutX="30.0" layoutY="130.0" text="Here's how to deal with them">
                            <font>
-                              <Font name="System Bold" size="15.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
                         <VBox layoutX="49.0" layoutY="180.0" prefHeight="1000.0" prefWidth="1098.0">
@@ -314,6 +314,53 @@
                               </HBox>
                            </children>
                         </VBox>
+                        <Label layoutX="30.0" layoutY="1250.0" text="Orthography">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="30.0" layoutY="1300.0" prefHeight="17.0" prefWidth="896.0" text="Hyphen (-) : between dozens and units. Exemple : (23) Vingt-trois -- 2 dozens-3units ">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="30.0" layoutY="1340.0" prefHeight="17.0" prefWidth="680.0" text="Conjuction (ET) : between dozens and one. Exemple : (31) Trente ET un">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="30.0" layoutY="1380.0" prefHeight="21.0" prefWidth="925.0" text="&quot;(100) Cent&quot; but &quot;(200) Deux cents&quot;, &quot;(300) Trois cents&quot; are written with a -S if there's no number after but if there is one, we don't put the -S">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="30.0" layoutY="1420.0" prefHeight="17.0" prefWidth="680.0" text="Exemple : (200) Deux cents -- (201) Deux cent un">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="30.0" layoutY="1470.0" text="Pronunciation">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="30.0" layoutY="1520.0" prefHeight="17.0" prefWidth="680.0" text="Numbers 5, 6, 8, 10, 20 have a different pronunciation when they are followed by a noun">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="30.0" layoutY="1560.0" prefHeight="17.0" prefWidth="680.0" text="Sept (7) : We do not pronounce the -P but always the -T">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="30.0" layoutY="1600.0" prefHeight="17.0" prefWidth="680.0" text="To express &quot;9 heures&quot; : we do not say &quot;neuF heures&quot; but &quot;neuV heures&quot;">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <JFXButton buttonType="RAISED" layoutX="423.0" layoutY="1726.0" onAction="#Go_To_Mp" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #4444fe;" text="Back" textFill="WHITE" />
+                        <JFXButton buttonType="RAISED" layoutX="689.0" layoutY="1726.0" onAction="#Go_To_Grammaire" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #4444fe;" text="Practice" textFill="WHITE" />
                      </children>
                   </AnchorPane>
                </content>
@@ -321,18 +368,670 @@
          </content>
     </Tab>
       <Tab text="Leçon : Imparfait ou Passé Simple">
-        <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-        </content>
+         <content>
+            <ScrollPane prefHeight="200.0" prefWidth="200.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1797.0" prefWidth="1200.0">
+                     <children>
+                        <Label layoutX="30.0" layoutY="30.0" text="Imparfait">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="30.0" layoutY="80.0" prefHeight="17.0" prefWidth="465.0" text="&quot;L'imparfait&quot; is used to express a past action which lasted but is over">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <VBox layoutX="350.0" layoutY="130.0" prefHeight="200.0" prefWidth="500.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 1px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label text="Conjugation">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label text="Je  -ais">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label text="Tu  -ais">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label text="Il, Elle, On  -ait">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label text="Nous  -ions">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label text="Vous  -iez">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label text="Ils, Elles  -aient">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="350.0" layoutY="360.0" prefHeight="200.0" prefWidth="500.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 1px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label text="Example">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label text="Je parlais">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label text="Tu parlais">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label text="Il, Elle, On  parlait">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label text="Nous parlions">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label text="Vous parliez">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label text="Ils, Elles  parlaient">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Label layoutX="30.0" layoutY="600.0" prefHeight="21.0" prefWidth="1086.0" text="For the verbs of the &quot;1er &amp; 3ème groupe&quot;, the -i from the first and second plural person needs to be kept even if we don't notice it when we pronounce the word">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <VBox layoutX="350.0" layoutY="650.0" prefHeight="200.0" prefWidth="500.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 1px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label text="Example">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label text="Je travaillais">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label text="Tu travaillais">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label text="Il, Elle, On  travaillait">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label text="Nous travaillions">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label text="Vous travaillez">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label text="Ils, Elles  travaillaient">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Label layoutX="30.0" layoutY="900.0" text="Passé simple">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="30.0" layoutY="939.0" prefHeight="21.0" prefWidth="1086.0" text="&quot;Passé simple&quot; is used like a narration tense for a ponctual action which takes place in the past">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <VBox layoutX="50.0" layoutY="1000.0" prefHeight="300.0" prefWidth="1100.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 1px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label text="Conjugation">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="1er groupe + verbe aller">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="2éme et 3ème groupe">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="3ème groupe">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" text="3ème groupe">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Je  -ai">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Je  -is">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Je  -us">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" text="Je  -ins">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Tu  -as">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Tu  -is">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Tu  -us">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" text="Tu  -ins">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Il, Elle, On  -a">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Il, Elle, On  -it">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Il, Elle, On  -ut">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" text="Il, Elle, On  -int">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Nous  -âmes">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Nous  -îmes">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Nous  -ûmes">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" text="Nous  -înmes">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Vous  -âtes">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Vous  -îtes">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Vous  -ûtes">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" text="Vous  -întes">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Ils, Elles  -èrent">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Ils, Elles  -irent">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Ils, Elles  -urent">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" text="Ils, Elles -inrent">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="47.0" layoutY="1354.0" prefHeight="300.0" prefWidth="1100.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 1px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label text="Example">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Parler">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Finir">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Avoir">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" text="Venir">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Je parlai">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Je  finis">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="J'eus">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" text="Je  vins">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Tu parlas">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Tu  finis">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Tu  eus">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" text="Tu  vins">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Il, Elle, On  parla">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Il, Elle, On  finit">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Il, Elle, On  eut">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" text="Il, Elle, On  vint">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Nous  parlâmes">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Nous  finîmes">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Nous  eûmes">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" text="Nous  vînmes">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Vous  parlâtes">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Vous  finîtes">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Vous  eûtes">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" text="Vous  vîntes">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: #4444fe;">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Ils, Elles  parlèrent">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Ils, Elles  finirent">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" style="-fx-border-width: 0px 1px 0px 0px; -fx-border-color: #4444fe;" text="Ils, Elles  eurent">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="40.0" />
+                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="245.0" text="Ils, Elles vinrent">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <JFXButton fx:id="back_mp_1" buttonType="RAISED" layoutX="433.0" layoutY="1711.0" onAction="#Go_To_Mp" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #4444fe;" text="Back" textFill="WHITE" />
+                        <JFXButton fx:id="practice_tps" buttonType="RAISED" layoutX="710.0" layoutY="1711.0" onAction="#Go_To_Temps" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #4444fe;" text="Practice" textFill="WHITE" />
+                     </children></AnchorPane>
+              </content>
+            </ScrollPane>
+         </content>
       </Tab>
       <Tab text="Leçon : Phonétique">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="352.0" layoutY="168.0" prefHeight="236.0" prefWidth="496.0" text="Page under development">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
         </content>
       </Tab>
       <Tab text="Leçon : Verbes Irréguliers">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="352.0" layoutY="168.0" prefHeight="236.0" prefWidth="496.0" text="Page under development">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
         </content>
       </Tab>
   </tabs>

@@ -30,7 +30,7 @@ public class Menu_PrincipalController implements Initializable{
 		Stage atelier_stage = new Stage();
 		Parent root = FXMLLoader.load(getClass().getResource("../FXML/Atelier.fxml"));
 		Scene atelier_scene = new Scene(root);
-		atelier_stage.setTitle("Atelier");
+		atelier_stage.setTitle("Workshop");
 		atelier_stage.setScene(atelier_scene);
 		atelier_stage.setResizable(false);
 		atelier_stage.show();
@@ -72,6 +72,22 @@ public class Menu_PrincipalController implements Initializable{
 		System.out.println("Fermeture du menu principal");
 	}
 
+	public void Open_Outil() throws Exception{
+		//Ouverture Ecran Atelier au clic bouton
+		Stage outil_stage = new Stage();
+		Parent root = FXMLLoader.load(getClass().getResource("../FXML/Outil.fxml"));
+		Scene outil_scene = new Scene(root);
+		outil_stage.setTitle("Tool");
+		outil_stage.setScene(outil_scene);
+		outil_stage.setResizable(false);
+		outil_stage.show();
+		
+		//Fermeture de l'ecran actuel
+		Stage screen = (Stage)screen_container.getScene().getWindow();
+		screen.close();
+		System.out.println("Fermeture du menu principal");
+	}
+	
 	public void Leave() {
 		//Fermeture de l'ecran actuel
 		Stage screen = (Stage)screen_container.getScene().getWindow();

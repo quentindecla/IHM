@@ -12,6 +12,7 @@ import com.jfoenix.controls.JFXRadioButton;
 
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ToggleGroup;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
@@ -30,86 +31,24 @@ public class Grammaire_DController implements Initializable{
 	private JFXButton btn_valider, btn_retour;
 	@FXML
 	private AnchorPane grammaire_container;
+	@FXML
+	private ToggleGroup group = new ToggleGroup();
+	@FXML
+	private ToggleGroup group1 = new ToggleGroup();
+	@FXML
+	private ToggleGroup group2 = new ToggleGroup();
+	@FXML
+	private ToggleGroup group3 = new ToggleGroup();
+	@FXML
+	private ToggleGroup group4 = new ToggleGroup();
+	@FXML
+	private ToggleGroup group5 = new ToggleGroup();
+	@FXML
+	private ToggleGroup group6 = new ToggleGroup();
+	@FXML
+	private ToggleGroup group7 = new ToggleGroup();
 	
-	public void true1_RDButton(){
-		true1.setSelected(true);
-		false1.setSelected(false);
-	}
 	
-	public void true2_RDButton(){
-		true2.setSelected(true);
-		false2.setSelected(false);
-	}
-	
-	public void true3_RDButton(){
-		true3.setSelected(true);
-		false3.setSelected(false);
-	}
-	
-	public void true4_RDButton(){
-		true4.setSelected(true);
-		false4.setSelected(false);
-	}
-	
-	public void true5_RDButton(){
-		true5.setSelected(true);
-		false5.setSelected(false);
-	}
-	
-	public void true6_RDButton(){
-		true6.setSelected(true);
-		false6.setSelected(false);
-	}
-	
-	public void true7_RDButton(){
-		true7.setSelected(true);
-		false7.setSelected(false);
-	}
-	
-	public void true8_RDButton(){
-		true8.setSelected(true);
-		false8.setSelected(false);
-	}
-	
-	public void false2_RDButton(){
-		false2.setSelected(true);
-		true2.setSelected(false);
-	}
-	
-	public void false3_RDButton(){
-		false3.setSelected(true);
-		true3.setSelected(false);
-	}
-	
-	public void false4_RDButton(){
-		false4.setSelected(true);
-		true4.setSelected(false);
-	}
-	
-	public void false5_RDButton(){
-		false5.setSelected(true);
-		true5.setSelected(false);
-	}
-	
-	public void false6_RDButton(){
-		false6.setSelected(true);
-		true6.setSelected(false);
-	}
-	
-	public void false7_RDButton(){
-		false7.setSelected(true);
-		true7.setSelected(false);
-	}
-	
-	public void false8_RDButton(){
-		false8.setSelected(true);
-		true8.setSelected(false);
-	}
-	
-	public void false1_RDButton(){
-		false1.setSelected(true);
-		true1.setSelected(false);
-	}
 	
 	public void check_answers() {
 		if((true1.isSelected() || false1.isSelected()) && (true2.isSelected() || false2.isSelected()) && (true3.isSelected() || false3.isSelected())
@@ -210,7 +149,7 @@ public class Grammaire_DController implements Initializable{
 		Stage atelier_stage = new Stage();
 		Parent root = FXMLLoader.load(getClass().getResource("../FXML/Atelier.fxml")); 	
 		Scene atelier_scene = new Scene(root);
-		atelier_stage.setTitle("Atelier");
+		atelier_stage.setTitle("Workshop");
 		atelier_stage.setScene(atelier_scene);
 		atelier_stage.setResizable(false);
 		atelier_stage.show();

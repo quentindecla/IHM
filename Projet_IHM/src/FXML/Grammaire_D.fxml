@@ -17,9 +17,9 @@
                <content>
                   <AnchorPane prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <Label layoutX="401.0" layoutY="14.0" prefHeight="38.0" prefWidth="399.0" text="Les phrases suivantes sont-elles grammaticalement correctes ?">
+                        <Label layoutX="424.0" layoutY="14.0" prefHeight="38.0" prefWidth="352.0" text="Are those sentences correct ?" textFill="#4444fe">
                            <font>
-                              <Font size="14.0" />
+                              <Font name="System Bold" size="25.0" />
                            </font>
                         </Label>
                         <Pane layoutX="26.0" layoutY="86.0" prefHeight="98.0" prefWidth="530.0" style="-fx-border-color: #4444fe;">
@@ -34,8 +34,11 @@
                                     <Font name="System Bold" size="16.0" />
                                  </font>
                               </Label>
-                              <JFXRadioButton fx:id="true1" layoutX="217.0" layoutY="41.0" onAction="#true1_RDButton" text="Vrai" />
-                              <JFXRadioButton fx:id="false1" layoutX="329.0" layoutY="41.0" onAction="#false1_RDButton" text="Faux" />
+                              <JFXRadioButton fx:id="true1" layoutX="217.0" layoutY="41.0" text="Vrai">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="group" />
+                                 </toggleGroup></JFXRadioButton>
+                              <JFXRadioButton fx:id="false1" layoutX="329.0" layoutY="41.0" text="Faux" toggleGroup="$group" />
                               <ImageView fx:id="img_q1" fitHeight="30.0" fitWidth="35.0" layoutX="450.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" style="visibility: hidden;">
                                  <image>
                                     <Image url="@../../img/success.png" />
@@ -59,8 +62,11 @@
                                     <Font name="System Bold" size="16.0" />
                                  </font>
                               </Label>
-                              <JFXRadioButton fx:id="true2" layoutX="217.0" layoutY="41.0" onAction="#true2_RDButton" text="Vrai" />
-                              <JFXRadioButton fx:id="false2" layoutX="329.0" layoutY="41.0" onAction="#false2_RDButton" text="Faux" />
+                              <JFXRadioButton fx:id="true2" layoutX="217.0" layoutY="41.0" text="Vrai">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="group2" />
+                                 </toggleGroup></JFXRadioButton>
+                              <JFXRadioButton fx:id="false2" layoutX="329.0" layoutY="41.0" text="Faux" toggleGroup="$group2" />
                               <Pane fx:id="correc_q2" layoutX="5.0" layoutY="67.0" prefHeight="25.0" prefWidth="520.0" style="-fx-border-color: firebrick;" visible="false">
                                  <children>
                                     <Label alignment="CENTER" layoutX="5.0" layoutY="4.0" prefHeight="17.0" prefWidth="520.0" text="Correction : Trente trois" />
@@ -89,8 +95,11 @@
                                     <Font name="System Bold" size="16.0" />
                                  </font>
                               </Label>
-                              <JFXRadioButton fx:id="true3" layoutX="217.0" layoutY="41.0" onAction="#true3_RDButton" text="Vrai" />
-                              <JFXRadioButton fx:id="false3" layoutX="329.0" layoutY="41.0" onAction="#false3_RDButton" text="Faux" />
+                              <JFXRadioButton fx:id="true3" layoutX="217.0" layoutY="41.0" text="Vrai">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="group3" />
+                                 </toggleGroup></JFXRadioButton>
+                              <JFXRadioButton fx:id="false3" layoutX="329.0" layoutY="41.0" text="Faux" toggleGroup="$group3" />
                               <ImageView fx:id="img_q3" fitHeight="30.0" fitWidth="35.0" layoutX="450.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" style="visibility: hidden;">
                                  <image>
                                     <Image url="@../../img/success.png" />
@@ -114,8 +123,11 @@
                                     <Font name="System Bold" size="16.0" />
                                  </font>
                               </Label>
-                              <JFXRadioButton fx:id="true4" layoutX="217.0" layoutY="41.0" onAction="#true4_RDButton" text="Vrai" />
-                              <JFXRadioButton fx:id="false4" layoutX="329.0" layoutY="41.0" onAction="#false4_RDButton" text="Faux" />
+                              <JFXRadioButton fx:id="true4" layoutX="217.0" layoutY="41.0" text="Vrai">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="group4" />
+                                 </toggleGroup></JFXRadioButton>
+                              <JFXRadioButton fx:id="false4" layoutX="329.0" layoutY="41.0" text="Faux" toggleGroup="$group4" />
                               <ImageView fx:id="img_q4" fitHeight="30.0" fitWidth="35.0" layoutX="450.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" style="visibility: hidden;">
                                  <image>
                                     <Image url="@../../img/success.png" />
@@ -127,7 +139,7 @@
                               </ImageView>
                            </children>
                         </Pane>
-                        <JFXButton fx:id="btn_valider" buttonType="RAISED" layoutX="644.0" layoutY="533.0" onAction="#check_answers" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #4444fe;" text="Valider" textFill="WHITE" />
+                        <JFXButton fx:id="btn_valider" buttonType="RAISED" layoutX="644.0" layoutY="533.0" onAction="#check_answers" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #4444fe;" text="Check" textFill="WHITE" />
                         <Pane layoutX="644.0" layoutY="86.0" prefHeight="98.0" prefWidth="530.0" style="-fx-border-color: #4444fe;">
                            <children>
                               <Label layoutX="22.0" layoutY="39.0" prefHeight="17.0" prefWidth="116.0" text="Deux milles">
@@ -140,8 +152,11 @@
                                     <Font name="System Bold" size="16.0" />
                                  </font>
                               </Label>
-                              <JFXRadioButton fx:id="true5" layoutX="217.0" layoutY="41.0" onAction="#true5_RDButton" text="Vrai" />
-                              <JFXRadioButton fx:id="false5" layoutX="329.0" layoutY="41.0" onAction="#false5_RDButton" text="Faux" />
+                              <JFXRadioButton fx:id="true5" layoutX="217.0" layoutY="41.0" text="Vrai">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="group5" />
+                                 </toggleGroup></JFXRadioButton>
+                              <JFXRadioButton fx:id="false5" layoutX="329.0" layoutY="41.0" text="Faux" toggleGroup="$group5" />
                               <Pane fx:id="correc_q5" layoutX="5.0" layoutY="67.0" prefHeight="25.0" prefWidth="520.0" style="-fx-border-color: firebrick; visibility: hidden;">
                                  <children>
                                     <Label alignment="CENTER" layoutX="5.0" layoutY="4.0" prefHeight="17.0" prefWidth="520.0" text="Correction : Deux mille" />
@@ -170,8 +185,11 @@
                                     <Font name="System Bold" size="16.0" />
                                  </font>
                               </Label>
-                              <JFXRadioButton fx:id="true6" layoutX="217.0" layoutY="41.0" onAction="#true6_RDButton" text="Vrai" />
-                              <JFXRadioButton fx:id="false6" layoutX="329.0" layoutY="41.0" onAction="#false6_RDButton" text="Faux" />
+                              <JFXRadioButton fx:id="true6" layoutX="217.0" layoutY="41.0" text="Vrai">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="group6" />
+                                 </toggleGroup></JFXRadioButton>
+                              <JFXRadioButton fx:id="false6" layoutX="329.0" layoutY="41.0" text="Faux" toggleGroup="$group6" />
                               <ImageView fx:id="img_q6" fitHeight="30.0" fitWidth="35.0" layoutX="450.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" style="visibility: hidden;">
                                  <image>
                                     <Image url="@../../img/success.png" />
@@ -195,8 +213,11 @@
                                     <Font name="System Bold" size="16.0" />
                                  </font>
                               </Label>
-                              <JFXRadioButton fx:id="true7" layoutX="217.0" layoutY="41.0" onAction="#true7_RDButton" text="Vrai" />
-                              <JFXRadioButton fx:id="false7" layoutX="329.0" layoutY="41.0" onAction="#false7_RDButton" text="Faux" />
+                              <JFXRadioButton fx:id="true7" layoutX="217.0" layoutY="41.0" text="Vrai">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="group7" />
+                                 </toggleGroup></JFXRadioButton>
+                              <JFXRadioButton fx:id="false7" layoutX="329.0" layoutY="41.0" text="Faux" toggleGroup="$group7" />
                               <Pane fx:id="correc_q7" layoutX="5.0" layoutY="67.0" prefHeight="25.0" prefWidth="520.0" style="-fx-border-color: firebrick; visibility: hidden;">
                                  <children>
                                     <Label alignment="CENTER" layoutX="5.0" layoutY="4.0" prefHeight="17.0" prefWidth="520.0" text="Correction : Deux cents" />
@@ -225,8 +246,11 @@
                                     <Font name="System Bold" size="16.0" />
                                  </font>
                               </Label>
-                              <JFXRadioButton fx:id="true8" layoutX="217.0" layoutY="41.0" onAction="#true8_RDButton" text="Vrai" />
-                              <JFXRadioButton fx:id="false8" layoutX="329.0" layoutY="41.0" onAction="#false8_RDButton" text="Faux" />
+                              <JFXRadioButton fx:id="true8" layoutX="217.0" layoutY="41.0" text="Vrai">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="group8" />
+                                 </toggleGroup></JFXRadioButton>
+                              <JFXRadioButton fx:id="false8" layoutX="329.0" layoutY="41.0" text="Faux" toggleGroup="$group8" />
                               <ImageView fx:id="img_q8" fitHeight="30.0" fitWidth="35.0" layoutX="450.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" style="visibility: hidden;">
                                  <image>
                                     <Image url="@../../img/success.png" />
@@ -238,14 +262,9 @@
                               </ImageView>
                            </children>
                         </Pane>
-                        <JFXButton fx:id="btn_retour" buttonType="RAISED" layoutX="393.0" layoutY="533.0" onAction="#back_btn" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #4444fe;" text="Retour" textFill="WHITE" />
+                        <JFXButton fx:id="btn_retour" buttonType="RAISED" layoutX="393.0" layoutY="533.0" onAction="#back_btn" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #4444fe;" text="Back" textFill="WHITE" />
                      </children>
                   </AnchorPane>
-               </content>
-            </Tab>
-          <Tab text="Untitled Tab 2">
-               <content>
-                  <AnchorPane prefHeight="200.0" prefWidth="200.0" />
                </content>
             </Tab>
         </tabs>

@@ -211,7 +211,7 @@ public class Prononciation_DController implements Initializable{
 		Stage atelier_stage = new Stage();
 		Parent root = FXMLLoader.load(getClass().getResource("../FXML/Atelier.fxml")); 	
 		Scene atelier_scene = new Scene(root);
-		atelier_stage.setTitle("Atelier");
+		atelier_stage.setTitle("Workshop");
 		atelier_stage.setScene(atelier_scene);
 		atelier_stage.setResizable(false);
 		atelier_stage.show();
