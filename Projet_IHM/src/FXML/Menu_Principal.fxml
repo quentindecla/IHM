@@ -11,7 +11,7 @@
 <AnchorPane fx:id="screen_container" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Menu_PrincipalController">
   <!-- TODO Add Nodes -->
   <children>
-      <Label fx:id="intro_label" alignment="CENTER" layoutX="377.0" layoutY="102.0" prefHeight="99.0" prefWidth="449.0" text="Bienvenue sur /*Nom de l'app*/ pour apprendre plusieurs langues !" />
+      <Label fx:id="intro_label" alignment="CENTER" layoutX="377.0" layoutY="102.0" prefHeight="99.0" prefWidth="449.0" text="Welcome to MultiLingo where you can learn several languages !" />
     <ImageView fitHeight="54.99998474121094" fitWidth="77.69838957998704" layoutX="561.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../img/drapeau_français.jpeg" />
@@ -49,7 +49,7 @@
       <Pane fx:id="label_outil" layoutX="752.0" layoutY="224.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #4444fe;">
          <children>
             <JFXButton fx:id="outil_btn" buttonType="RAISED" layoutX="45.0" layoutY="140.0" onAction="#Open_Outil" prefHeight="40.0" prefWidth="111.0" ripplerFill="BLACK" style="-fx-background-color: #4444fe;" text="Tool" textFill="WHITE" />
-            <Label fx:id="label_magazine2" alignment="CENTER" layoutX="5.0" layoutY="10.0" prefHeight="119.0" prefWidth="190.0" text="Need help ?" />
+            <Label fx:id="label_magazine2" alignment="CENTER" layoutX="5.0" layoutY="10.0" prefHeight="119.0" prefWidth="190.0" text="Learn before practicing" />
          </children>
          <effect>
             <Blend />

@@ -66,7 +66,7 @@ public class Temps_et_Conjugaison_DController implements Initializable {
 			Stage stage = new Stage();
 			Parent root = FXMLLoader.load(getClass().getResource("../FXML/Atelier.fxml")); 	
 			Scene scene = new Scene(root);
-			stage.setTitle("Workshop");
+			stage.setTitle("MultiLingo - Workshop");
 			stage.setScene(scene);
 			stage.setResizable(false);
 			stage.show();

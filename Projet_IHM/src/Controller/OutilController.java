@@ -20,7 +20,7 @@ public class OutilController {
 		Stage mp_stage = new Stage();
 		Parent root = FXMLLoader.load(getClass().getResource("../FXML/Menu_Principal.fxml")); 	
 		Scene mp_scene = new Scene(root);
-		mp_stage.setTitle("Main Menu");
+		mp_stage.setTitle("MultiLingo - Main Menu");
 		mp_stage.setScene(mp_scene);
 		mp_stage.setResizable(false);
 		mp_stage.show();
@@ -35,7 +35,7 @@ public class OutilController {
 		Stage tps_stage = new Stage();
 		Parent root = FXMLLoader.load(getClass().getResource("../FXML/Temps_et_Conjugaison_D.fxml")); 	
 		Scene tps_scene = new Scene(root);
-		tps_stage.setTitle("Exercise - Tense & Conjugation");
+		tps_stage.setTitle("MultiLingo - Exercise : Tense & Conjugation");
 		tps_stage.setScene(tps_scene);
 		tps_stage.setResizable(false);
 		tps_stage.show();
@@ -52,7 +52,7 @@ public class OutilController {
 		Stage grammaire_stage = new Stage();
 		Parent root = FXMLLoader.load(getClass().getResource("../FXML/Grammaire_D.fxml")); 	
 		Scene grammaire_scene = new Scene(root);
-		grammaire_stage.setTitle("Exercice - Grammar");
+		grammaire_stage.setTitle("MultiLingo - Exercise : Grammar");
 		grammaire_stage.setScene(grammaire_scene);
 		grammaire_stage.setResizable(false);
 		grammaire_stage.show();

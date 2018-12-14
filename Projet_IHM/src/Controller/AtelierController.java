@@ -38,7 +38,7 @@ public class AtelierController implements Initializable{
 		Stage mp_stage = new Stage();
 		Parent root = FXMLLoader.load(getClass().getResource("../FXML/Menu_Principal.fxml")); 	
 		Scene mp_scene = new Scene(root);
-		mp_stage.setTitle("Main Menu");
+		mp_stage.setTitle("MultiLingo - Main Menu");
 		mp_stage.setScene(mp_scene);
 		mp_stage.setResizable(false);
 		mp_stage.show();
@@ -59,7 +59,7 @@ public class AtelierController implements Initializable{
 			Stage ex1_stage = new Stage();
 			Parent root = FXMLLoader.load(getClass().getResource("../FXML/Temps_et_Conjugaison_D.fxml")); 	
 			Scene ex1_scene = new Scene(root);
-			ex1_stage.setTitle("Exercise - Tense & Conjugation");
+			ex1_stage.setTitle("MultiLingo - Exercise : Tense & Conjugation");
 			ex1_stage.setScene(ex1_scene);
 			ex1_stage.setResizable(false);
 			ex1_stage.show();
@@ -80,7 +80,7 @@ public class AtelierController implements Initializable{
 			Stage ex2_stage = new Stage();
 			Parent root = FXMLLoader.load(getClass().getResource("../FXML/Grammaire_D.fxml")); 	
 			Scene ex2_scene = new Scene(root);
-			ex2_stage.setTitle("Exercice - Grammar");
+			ex2_stage.setTitle("MultiLingo - Exercise : Grammar");
 			ex2_stage.setScene(ex2_scene);
 			ex2_stage.setResizable(false);
 			ex2_stage.show();
@@ -101,7 +101,7 @@ public class AtelierController implements Initializable{
 			Stage ex3_stage = new Stage();
 			Parent root = FXMLLoader.load(getClass().getResource("../FXML/Verbes_Irreguliers_D.fxml")); 	
 			Scene ex3_scene = new Scene(root);
-			ex3_stage.setTitle("Exercise - Irregular Verbs");
+			ex3_stage.setTitle("MultiLingo - Exercise : Irregular Verbs");
 			ex3_stage.setScene(ex3_scene);
 			ex3_stage.setResizable(false);
 			ex3_stage.show();
@@ -122,7 +122,7 @@ public class AtelierController implements Initializable{
 			Stage ex4_stage = new Stage();
 			Parent root = FXMLLoader.load(getClass().getResource("../FXML/Prononciation_D.fxml")); 	
 			Scene ex4_scene = new Scene(root);
-			ex4_stage.setTitle("Exercise - Pronunciation");
+			ex4_stage.setTitle("MultiLingo - Exercise : Pronunciation");
 			ex4_stage.setScene(ex4_scene);
 			ex4_stage.setResizable(false);
 			ex4_stage.show();

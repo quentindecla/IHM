@@ -30,7 +30,7 @@ public class Menu_PrincipalController implements Initializable{
 		Stage atelier_stage = new Stage();
 		Parent root = FXMLLoader.load(getClass().getResource("../FXML/Atelier.fxml"));
 		Scene atelier_scene = new Scene(root);
-		atelier_stage.setTitle("Workshop");
+		atelier_stage.setTitle("MultiLingo - Workshop");
 		atelier_stage.setScene(atelier_scene);
 		atelier_stage.setResizable(false);
 		atelier_stage.show();
@@ -45,7 +45,7 @@ public class Menu_PrincipalController implements Initializable{
 		Stage mp_eng = new Stage();
 		Parent root = FXMLLoader.load(getClass().getResource("../FXML/Main_Menu.fxml"));
 		Scene mp_eng_scene = new Scene(root);
-		mp_eng.setTitle("Main Menu");
+		mp_eng.setTitle("MultiLingo - Main Menu");
 		mp_eng.setScene(mp_eng_scene);
 		mp_eng.setResizable(false);
 		mp_eng.show();
@@ -61,7 +61,7 @@ public class Menu_PrincipalController implements Initializable{
 		Stage mp_esp = new Stage();
 		Parent root = FXMLLoader.load(getClass().getResource("../FXML/Menu_Principal_Esp.fxml"));
 		Scene mp_esp_scene = new Scene(root);
-		mp_esp.setTitle("Main Menu");
+		mp_esp.setTitle("MultiLingo - Main Menu");
 		mp_esp.setScene(mp_esp_scene);
 		mp_esp.setResizable(false);
 		mp_esp.show();
@@ -77,7 +77,7 @@ public class Menu_PrincipalController implements Initializable{
 		Stage outil_stage = new Stage();
 		Parent root = FXMLLoader.load(getClass().getResource("../FXML/Outil.fxml"));
 		Scene outil_scene = new Scene(root);
-		outil_stage.setTitle("Tool");
+		outil_stage.setTitle("MultiLingo - Tool");
 		outil_stage.setScene(outil_scene);
 		outil_stage.setResizable(false);
 		outil_stage.show();

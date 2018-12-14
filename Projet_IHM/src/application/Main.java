@@ -14,7 +14,7 @@ public class Main extends Application {
 			Parent root = FXMLLoader.load(getClass().getResource("../FXML/Menu_Principal.fxml")); 	
 			Scene scene = new Scene(root);
 			primaryStage.setScene(scene);
-			primaryStage.setTitle("Main Menu");
+			primaryStage.setTitle("MultiLingo - Main Menu");
 			primaryStage.setResizable(false);
 			primaryStage.show();
 		} catch(Exception e) {
