@@ -88,6 +88,22 @@ public class Menu_PrincipalController implements Initializable{
 		System.out.println("Fermeture du menu principal");
 	}
 	
+	public void Open_Magazine() throws Exception{
+		//Ouverture Ecran Magazine au clic bouton
+		Stage mag_stage = new Stage();
+		Parent root = FXMLLoader.load(getClass().getResource("../FXML/Magazine.fxml"));
+		Scene mag_scene = new Scene(root);
+		mag_stage.setTitle("MultiLingo - Magazine");
+		mag_stage.setScene(mag_scene);
+		mag_stage.setResizable(false);
+		mag_stage.show();
+		
+		//Fermeture de l'ecran actuel
+		Stage screen = (Stage)screen_container.getScene().getWindow();
+		screen.close();
+		System.out.println("Fermeture du menu principal");
+	}
+	
 	public void Leave() {
 		//Fermeture de l'ecran actuel
 		Stage screen = (Stage)screen_container.getScene().getWindow();

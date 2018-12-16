@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane fx:id="tabpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MagazineController">
+  <tabs>
+    <Tab fx:id="localisation" text="Localisation">
+         <content>
+            <ScrollPane prefHeight="1000.0" prefWidth="1200.0">
+              <content>
+                <AnchorPane prefHeight="1000.0" prefWidth="1200.0">
+                     <children>
+                        <ImageView fitHeight="404.0" fitWidth="626.0" layoutX="547.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/France.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="545.0" layoutY="46.0" style="-fx-text-fill: #4444FE;" text="France">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="53.0" layoutY="153.0" prefHeight="27.0" prefWidth="458.0" text="Little country located on Europe. Thanks to this page" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="54.0" layoutY="192.0" prefHeight="27.0" prefWidth="458.0" text="you will learn few things about it. France is a transcon-" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="53.0" layoutY="232.0" prefHeight="27.0" prefWidth="458.0" text="tinental sovereign state, whose metropolitan territory" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="53.0" layoutY="309.0" prefHeight="27.0" prefWidth="458.0" text="ers with Belgium, Luxembourg, Germany, Switzerland, " wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="54.0" layoutY="433.0" prefHeight="27.0" prefWidth="458.0" text="Atlantic, the Manche, the North Sea and the Mediter-" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="54.0" layoutY="473.0" prefHeight="27.0" prefWidth="458.0" text="ranean. Its overseas territory extends into the Indian," wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="53.0" layoutY="391.0" prefHeight="27.0" prefWidth="458.0" text="Monaco, and has important maritime facades in the" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="54.0" layoutY="348.0" prefHeight="27.0" prefWidth="458.0" text="Italy, Spain and the principalities of Andorra and" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="53.0" layoutY="271.0" prefHeight="27.0" prefWidth="458.0" text="is located in Western Europe. The latter has land bord-" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="53.0" layoutY="514.0" prefHeight="27.0" prefWidth="458.0" text="Atlantic and Pacific oceans as well as on the South" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="54.0" layoutY="559.0" prefHeight="27.0" prefWidth="458.0" text="American continent, and has land borders with Brazil," wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="53.0" layoutY="602.0" prefHeight="27.0" prefWidth="458.0" text="Suriname and the Kingdom of the Netherlands" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="btn1" layoutX="537.0" layoutY="737.0" onAction="#Back_to_Menu" prefHeight="54.0" prefWidth="127.0" style="-fx-background-color: #4444FE;" text="Back to menu" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </content></Tab>
+    <Tab text="Tourism       ">
+         <content>
+            <ScrollPane prefHeight="2000.0" prefWidth="1200.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2000.0" prefWidth="1200.0">
+                     <children>
+                        <ImageView fitHeight="400.0" fitWidth="537.0" layoutX="600.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/Tour_eiffel.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="356.0" fitWidth="605.0" layoutX="45.0" layoutY="752.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/Chateau_versaille.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="427.0" fitWidth="658.0" layoutX="479.0" layoutY="1397.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/notre_dame.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="521.0" layoutY="73.0" style="-fx-text-fill: #4444FE;" text="Eiffel Tower">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="54.0" layoutY="259.0" text="Built for the World's Fair in 1889, the Eiffel Tower was the world's">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="55.0" layoutY="315.0" text="tallest building. At a height of 324 m (with antennas), this marvel">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="55.0" layoutY="373.0" text="is the most visited paying monument in the world.">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="464.0" layoutY="635.0" style="-fx-text-fill: #4444FE;" text="Castle of Versailles">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="623.0" layoutY="837.0" text="Residence of the Kings of France, the Palace of Versailles, properly ">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="623.0" layoutY="903.0" text="speaking, includes more than 2,000 pieces. The park extends on">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="623.0" layoutY="974.0" text="815 hectares. This jewel has become a symbol of the apogee  of">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="623.0" layoutY="1036.0" text="French royalty.">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="418.0" layoutY="1284.0" style="-fx-text-fill: #4444FE;" text="Notre-Dame-de-Paris">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="63.0" layoutY="1449.0" text="Gothic masterpiece, the Cathedral of Notre-Dame">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="63.0" layoutY="1502.0" text="-de-Paris is the most visited French monument.">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="63.0" layoutY="1556.0" text=" Its construction began in 1163. The building">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="63.0" layoutY="1613.0" text="has become over the centuries one of the">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="63.0" layoutY="1673.0" text="great symbols of Paris and France.">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="btn2" layoutX="479.0" layoutY="1851.0" onAction="#Back_to_Menu" prefHeight="49.0" prefWidth="131.0" style="-fx-background-color: #4444FE;" text="Back to menu" textFill="WHITE" />
+                        <HBox layoutX="14.0" layoutY="14.0" prefHeight="501.0" prefWidth="1155.0" style="-fx-border-color: #4444FE;" />
+                        <HBox layoutX="14.0" layoutY="602.0" prefHeight="539.0" prefWidth="1156.0" style="-fx-border-color: #4444FE;" />
+                        <HBox layoutX="14.0" layoutY="1261.0" prefHeight="540.0" prefWidth="1165.0" style="-fx-border-color: #4444FE;" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </content></Tab>
+      <Tab text="Gastronomy">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ScrollPane prefHeight="1800.0" prefWidth="1200.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="1200.0">
+                           <children>
+                              <JFXButton fx:id="btn3" layoutX="535.0" layoutY="460.0" onAction="#Back_to_Menu" prefHeight="49.0" prefWidth="130.0" style="-fx-background-color: #4444FE;" text="Back to menu" textFill="WHITE" />
+                              <HBox alignment="CENTER" layoutX="52.0" layoutY="53.0" prefHeight="326.0" prefWidth="1113.0" style="-fx-border-color: #4444FE;">
+                                 <children>
+                                    <ImageView fitHeight="252.0" fitWidth="334.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../img/pain_au_chocolatine.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" />
+                                    <Label prefHeight="35.0" prefWidth="662.0" text="&quot;Pain au chocolat ou chocolatine&quot; depending the location.">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>
