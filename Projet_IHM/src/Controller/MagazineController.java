@@ -25,9 +25,9 @@ public class MagazineController {
 	@FXML
 	private JFXButton btn3;
 
-	public void retour_Atelier() throws Exception{     
+	public void Back_to_Menu() throws Exception{     
 		Stage stage = new Stage();
-		Parent root = FXMLLoader.load(getClass().getResource("../FXML/Magazine.fxml")); 	
+		Parent root = FXMLLoader.load(getClass().getResource("../FXML/Menu_Principal.fxml")); 	
 		Scene scene = new Scene(root);
 		stage.setTitle("MultiLingo - Workshop");
 		stage.setScene(scene);
