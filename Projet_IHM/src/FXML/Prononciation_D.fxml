@@ -37,7 +37,7 @@
                      </image>
                   </ImageView>
                   <JFXTextArea fx:id="rep1" focusColor="#4444fe" layoutX="131.0" layoutY="35.0" prefHeight="30.0" prefWidth="138.0" />
-                  <Label fx:id="correction1" layoutX="297.0" layoutY="37.0" prefHeight="25.0" prefWidth="116.0" style="visibility: hidden;" text="Correction : Bonjour" textFill="FIREBRICK" />
+                  <Label fx:id="correction1" layoutX="297.0" layoutY="37.0" prefHeight="25.0" prefWidth="132.0" style="visibility: hidden;" text="Correction : Bonjour" textFill="FIREBRICK" />
                   <ImageView fx:id="audio1" fitHeight="50.0" fitWidth="35.0" layoutX="489.0" layoutY="32.0" onMousePressed="#play_audio1" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
                         <Image url="@../../img/audio.png" />
@@ -73,7 +73,7 @@
                      </image>
                   </ImageView>
                   <JFXTextArea fx:id="rep2" focusColor="#4444fe" layoutX="131.0" layoutY="35.0" prefHeight="30.0" prefWidth="138.0" />
-                  <Label fx:id="correction2" layoutX="297.0" layoutY="37.0" prefHeight="25.0" prefWidth="116.0" style="visibility: hidden;" text="Correction : Attaquer" textFill="FIREBRICK" />
+                  <Label fx:id="correction2" layoutX="297.0" layoutY="37.0" prefHeight="25.0" prefWidth="138.0" style="visibility: hidden;" text="Correction : Attaquer" textFill="FIREBRICK" />
                   <ImageView fx:id="audio2" fitHeight="50.0" fitWidth="35.0" layoutX="489.0" layoutY="32.0" onMousePressed="#play_audio2" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
                         <Image url="@../../img/audio.png" />
@@ -104,7 +104,7 @@
                      </image>
                   </ImageView>
                   <JFXTextArea fx:id="rep3" focusColor="#4444fe" layoutX="131.0" layoutY="35.0" prefHeight="30.0" prefWidth="138.0" />
-                  <Label fx:id="correction3" layoutX="297.0" layoutY="37.0" prefHeight="25.0" prefWidth="116.0" style="visibility: hidden;" text="Correction : Sucre" textFill="FIREBRICK" />
+                  <Label fx:id="correction3" layoutX="297.0" layoutY="37.0" prefHeight="25.0" prefWidth="126.0" style="visibility: hidden;" text="Correction : Sucre" textFill="FIREBRICK" />
                   <ImageView fx:id="audio3" fitHeight="50.0" fitWidth="35.0" layoutX="489.0" layoutY="32.0" onMousePressed="#play_audio3" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
                         <Image url="@../../img/audio.png" />
@@ -135,7 +135,7 @@
                      </image>
                   </ImageView>
                   <JFXTextArea fx:id="rep4" focusColor="#4444fe" layoutX="131.0" layoutY="35.0" prefHeight="30.0" prefWidth="138.0" />
-                  <Label fx:id="correction4" layoutX="297.0" layoutY="37.0" prefHeight="25.0" prefWidth="116.0" style="visibility: hidden;" text="Correction : Échec" textFill="FIREBRICK" />
+                  <Label fx:id="correction4" layoutX="297.0" layoutY="37.0" prefHeight="25.0" prefWidth="132.0" style="visibility: hidden;" text="Correction : Échec" textFill="FIREBRICK" />
                   <ImageView fx:id="audio4" fitHeight="50.0" fitWidth="35.0" layoutX="489.0" layoutY="32.0" onMousePressed="#play_audio4" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
                         <Image url="@../../img/audio.png" />
@@ -172,7 +172,7 @@
                      </image>
                   </ImageView>
                   <JFXTextArea fx:id="rep5" focusColor="#4444fe" layoutX="131.0" layoutY="35.0" prefHeight="30.0" prefWidth="138.0" />
-                  <Label fx:id="correction5" layoutX="297.0" layoutY="37.0" prefHeight="25.0" prefWidth="126.0" style="visibility: hidden;" text="Correction : Supporter" textFill="FIREBRICK" />
+                  <Label fx:id="correction5" layoutX="297.0" layoutY="37.0" prefHeight="25.0" prefWidth="150.0" style="visibility: hidden;" text="Correction : Supporter" textFill="FIREBRICK" />
                   <ImageView fx:id="audio5" fitHeight="50.0" fitWidth="35.0" layoutX="489.0" layoutY="32.0" onMousePressed="#play_audio5" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
                         <Image url="@../../img/audio.png" />
@@ -203,7 +203,7 @@
                      </image>
                   </ImageView>
                   <JFXTextArea fx:id="rep6" focusColor="#4444fe" layoutX="131.0" layoutY="31.0" prefHeight="30.0" prefWidth="138.0" />
-                  <Label fx:id="correction6" layoutX="297.0" layoutY="37.0" prefHeight="25.0" prefWidth="116.0" style="visibility: hidden;" text="Correction : Attaquer" textFill="FIREBRICK" />
+                  <Label fx:id="correction6" layoutX="297.0" layoutY="37.0" prefHeight="25.0" prefWidth="144.0" style="visibility: hidden;" text="Correction : Attaquer" textFill="FIREBRICK" />
                   <ImageView fx:id="audio6" fitHeight="50.0" fitWidth="35.0" layoutX="489.0" layoutY="32.0" onMousePressed="#play_audio6" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
                         <Image url="@../../img/audio.png" />
@@ -239,7 +239,7 @@
                      </image>
                   </ImageView>
                   <JFXTextArea fx:id="rep7" focusColor="#4444fe" layoutX="131.0" layoutY="35.0" prefHeight="30.0" prefWidth="138.0" />
-                  <Label fx:id="correction7" layoutX="297.0" layoutY="37.0" prefHeight="25.0" prefWidth="126.0" style="visibility: hidden;" text="Correction : Enchanter" textFill="FIREBRICK" />
+                  <Label fx:id="correction7" layoutX="297.0" layoutY="37.0" prefHeight="25.0" prefWidth="150.0" style="visibility: hidden;" text="Correction : Enchanter" textFill="FIREBRICK" />
                   <ImageView fx:id="audio7" fitHeight="50.0" fitWidth="35.0" layoutX="489.0" layoutY="32.0" onMousePressed="#play_audio7" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
                         <Image url="@../../img/audio.png" />
@@ -270,7 +270,7 @@
                      </image>
                   </ImageView>
                   <JFXTextArea fx:id="rep8" focusColor="#4444fe" layoutX="131.0" layoutY="35.0" prefHeight="30.0" prefWidth="138.0" />
-                  <Label fx:id="correction8" layoutX="297.0" layoutY="37.0" prefHeight="25.0" prefWidth="116.0" style="visibility: hidden;" text="Correction : Dormir" textFill="FIREBRICK" />
+                  <Label fx:id="correction8" layoutX="297.0" layoutY="37.0" prefHeight="25.0" prefWidth="138.0" style="visibility: hidden;" text="Correction : Dormir" textFill="FIREBRICK" />
                   <ImageView fx:id="audio8" fitHeight="50.0" fitWidth="35.0" layoutX="489.0" layoutY="32.0" onMousePressed="#play_audio8" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
                         <Image url="@../../img/audio.png" />

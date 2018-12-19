@@ -20,7 +20,7 @@
                               <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
-                        <Label layoutX="30.0" layoutY="80.0" prefHeight="21.0" prefWidth="232.0" text="They are used to express quantity">
+                        <Label layoutX="30.0" layoutY="80.0" prefHeight="21.0" prefWidth="278.0" text="They are used to express quantity">
                            <font>
                               <Font size="15.0" />
                            </font>
@@ -359,8 +359,8 @@
                               <Font size="15.0" />
                            </font>
                         </Label>
-                        <JFXButton buttonType="RAISED" layoutX="423.0" layoutY="1726.0" onAction="#Go_To_Mp" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #4444fe;" text="Back" textFill="WHITE" />
-                        <JFXButton buttonType="RAISED" layoutX="689.0" layoutY="1726.0" onAction="#Go_To_Grammaire" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #4444fe;" text="Practice" textFill="WHITE" />
+                        <JFXButton buttonType="RAISED" layoutX="423.0" layoutY="1726.0" onAction="#Go_To_Mp" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #4444fe;" text="Back" textFill="WHITE" />
+                        <JFXButton buttonType="RAISED" layoutX="689.0" layoutY="1726.0" onAction="#Go_To_Grammaire" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #4444fe;" text="Practice" textFill="WHITE" />
                      </children>
                   </AnchorPane>
                </content>
@@ -378,7 +378,7 @@
                               <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
-                        <Label layoutX="30.0" layoutY="80.0" prefHeight="17.0" prefWidth="465.0" text="&quot;L'imparfait&quot; is used to express a past action which lasted but is over">
+                        <Label layoutX="30.0" layoutY="80.0" prefHeight="19.0" prefWidth="576.0" text="&quot;L'imparfait&quot; is used to express a past action which lasted but is over">
                            <font>
                               <Font size="15.0" />
                            </font>
@@ -517,7 +517,7 @@
                               </HBox>
                            </children>
                         </VBox>
-                        <Label layoutX="30.0" layoutY="600.0" prefHeight="21.0" prefWidth="1086.0" text="For the verbs of the &quot;1er &amp; 3ème groupe&quot;, the -i from the first and second plural person needs to be kept even if we don't notice it when we pronounce the word">
+                        <Label layoutX="30.0" layoutY="600.0" prefHeight="21.0" prefWidth="1160.0" text="For the verbs of the &quot;1er &amp; 3ème groupe&quot;, the -i from the first and second plural person needs to be kept even if we don't notice it when we pronounce">
                            <font>
                               <Font size="15.0" />
                            </font>
@@ -1003,8 +1003,13 @@
                               </HBox>
                            </children>
                         </VBox>
-                        <JFXButton fx:id="back_mp_1" buttonType="RAISED" layoutX="433.0" layoutY="1711.0" onAction="#Go_To_Mp" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #4444fe;" text="Back" textFill="WHITE" />
-                        <JFXButton fx:id="practice_tps" buttonType="RAISED" layoutX="710.0" layoutY="1711.0" onAction="#Go_To_Temps" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #4444fe;" text="Practice" textFill="WHITE" />
+                        <JFXButton fx:id="back_mp_1" buttonType="RAISED" layoutX="433.0" layoutY="1711.0" onAction="#Go_To_Mp" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #4444fe;" text="Back" textFill="WHITE" />
+                        <JFXButton fx:id="practice_tps" buttonType="RAISED" layoutX="710.0" layoutY="1711.0" onAction="#Go_To_Temps" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #4444fe;" text="Practice" textFill="WHITE" />
+                        <Label layoutX="30.0" layoutY="629.0" prefHeight="21.0" prefWidth="1169.0" text="the word">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
                      </children></AnchorPane>
               </content>
             </ScrollPane>
@@ -1014,7 +1019,7 @@
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <Label alignment="CENTER" layoutX="352.0" layoutY="168.0" prefHeight="236.0" prefWidth="496.0" text="Page under development">
+                  <Label alignment="CENTER" layoutX="317.0" layoutY="166.0" prefHeight="236.0" prefWidth="567.0" text="Page under development">
                      <font>
                         <Font size="40.0" />
                      </font>
@@ -1026,7 +1031,7 @@
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <Label alignment="CENTER" layoutX="352.0" layoutY="168.0" prefHeight="236.0" prefWidth="496.0" text="Page under development">
+                  <Label alignment="CENTER" layoutX="331.0" layoutY="166.0" prefHeight="236.0" prefWidth="539.0" text="Page under development">
                      <font>
                         <Font size="40.0" />
                      </font>

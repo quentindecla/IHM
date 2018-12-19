@@ -10,7 +10,7 @@
 
 <AnchorPane fx:id="scene_verb_irre" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Verbes_Irreguliers_DController">
    <children>
-      <VBox fx:id="v_box" alignment="CENTER" layoutX="320.0" layoutY="81.0" prefHeight="380.0" prefWidth="560.0">
+      <VBox fx:id="v_box" alignment="CENTER" layoutX="320.0" layoutY="84.0" prefHeight="380.0" prefWidth="560.0">
          <children>
             <HBox fx:id="hbox1" alignment="CENTER" centerShape="false" prefHeight="38.0" prefWidth="420.0">
                <children>
@@ -19,14 +19,14 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Region prefHeight="38.0" prefWidth="48.0" HBox.hgrow="ALWAYS" />
-                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="85.0" text="Imparfait">
+                  <Region prefHeight="34.0" prefWidth="102.0" HBox.hgrow="ALWAYS" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="108.0" text="Imparfait">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
                   <Region prefHeight="34.0" prefWidth="50.0" HBox.hgrow="ALWAYS" />
-                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="129.0" text="Participe passé">
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="168.0" text="Participe passé">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
@@ -60,7 +60,7 @@
                      <font>
                         <Font size="18.0" />
                      </font></Label>
-                  <Region prefHeight="34.0" prefWidth="85.0" HBox.hgrow="ALWAYS" />
+                  <Region prefHeight="34.0" prefWidth="93.0" HBox.hgrow="ALWAYS" />
                   <TextArea fx:id="PRET_etre" prefHeight="36.0" prefWidth="114.0" />
                   <Region prefHeight="38.0" prefWidth="57.0" HBox.hgrow="ALWAYS" />
                   <TextArea fx:id="PP_etre" prefHeight="36.0" prefWidth="128.0" />
@@ -160,12 +160,12 @@
                </VBox.margin>
             </HBox>
          </children></VBox>
-      <Label layoutX="385.0" layoutY="22.0" style="-fx-text-fill: #4444FE;" text="Complete with the right form of the verb">
+      <Label layoutX="323.0" layoutY="24.0" style="-fx-text-fill: #4444FE;" text="Complete with the right form of the verb">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <JFXButton fx:id="return_btn" layoutX="454.0" layoutY="514.0" onAction="#retour_Atelier" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #4444FE;" text="Back" textFill="WHITE" />
-      <JFXButton fx:id="check_btn" layoutX="689.0" layoutY="514.0" onAction="#validation" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #4444FE;" text="Check" textFill="WHITE" />
+      <JFXButton fx:id="return_btn" layoutX="353.0" layoutY="534.0" onAction="#retour_Atelier" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #4444FE;" text="Back" textFill="WHITE" />
+      <JFXButton fx:id="check_btn" layoutX="689.0" layoutY="534.0" onAction="#validation" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #4444FE;" text="Check" textFill="WHITE" />
    </children>
 </AnchorPane>

@@ -17,7 +17,7 @@
                <content>
                   <AnchorPane prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <Label layoutX="424.0" layoutY="14.0" prefHeight="38.0" prefWidth="352.0" text="Are those sentences correct ?" textFill="#4444fe">
+                        <Label layoutX="388.0" layoutY="14.0" prefHeight="38.0" prefWidth="424.0" text="Are those sentences correct ?" textFill="#4444fe">
                            <font>
                               <Font name="System Bold" size="25.0" />
                            </font>
@@ -175,7 +175,7 @@
                         </Pane>
                         <Pane layoutX="644.0" layoutY="196.0" prefHeight="98.0" prefWidth="530.0" style="-fx-border-color: #4444fe;">
                            <children>
-                              <Label layoutX="14.0" layoutY="40.0" prefHeight="20.0" prefWidth="132.0" text="J'ai trois cents euros">
+                              <Label layoutX="14.0" layoutY="40.0" prefHeight="20.0" prefWidth="151.0" text="J'ai trois cents euros">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
@@ -236,7 +236,7 @@
                         </Pane>
                         <Pane layoutX="644.0" layoutY="416.0" prefHeight="98.0" prefWidth="530.0" style="-fx-border-color: #4444fe;">
                            <children>
-                              <Label layoutX="22.0" layoutY="39.0" prefHeight="20.0" prefWidth="138.0" text="La page vingt-et-une">
+                              <Label layoutX="22.0" layoutY="39.0" prefHeight="20.0" prefWidth="158.0" text="La page vingt-et-une">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
